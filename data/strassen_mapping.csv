@@ -1,0 +1,36 @@
+historic_regex,current,kommentar
+^Adolf Hitler-Straße,Alleestraße,NS-Umbenennung; korrigiert von Allestraße zu Alleestraße
+^Adolf Hitler-Platz,Rathausplatz,
+^Albert Müller-Straße,Obere Bahnhofstraße,Albert Mueller NSDAP-Funktionaer
+^Albert Müller-Platz,Bahnhofspl.,korrigiert zu OSM-Form Bahnhofspl.
+^Horst Wessel-Straße,Hastenerstraße,
+^SA-Siedlung,Hohenbirke,
+^Hermann Göring-Straße,Kölner Straße,
+^Ludendorff[- ]?[Ss]traße,Büchelstraße,Variante mit/ohne Bindestrich und Leerzeichen
+^Gustloff[- ]?[Ss]traße,Robert-Koch-Straße,Wilhelm Gustloff 1936 ermordeter NS-Funktionaer
+^(?:Albert Leo )?Schlageter-Allee,Lindenallee,Schlageter NS-Maertyrer-Ikone
+^Yorkstraße,Yorckstraße,Schreibvariante
+^Carl Friedrichs-Straße,Carl-Friedrichs-Straße,Schreibvariante (Bindestrich statt Leerzeichen)
+^Bauluststraße,Paulusstraße,unsicher laut Recherche
+^Fritz Rocholl-Straße,Daniel-Schürmann-Straße,unsicher laut Recherche
+^Alte Freiheitsstraße,Alte Freiheitstraße,Schreibvariante (eingeschobenes s entfernt)
+^Am Weyershofsfeld,Am Weyerhofsfeld,Schreibvariante
+^Linkläuserstraße,Linkläuer Straße,Schreibvariante
+^Bahnhofsplatz,Bahnhofspl.,OSM-Form abgekuerzt
+^Kleinbeckerstraße,Klein-Becker-Straße,Schreibvariante mit Bindestrichen
+^Richard Königs-Straße,Richard-Koenigs-Straße,Umlaut ausgeschrieben in OSM
+^Wüstenhagen(?!\w),Wüstenhagener Straße,unsicher laut Recherche
+^Erholungsstraße,Erholungstraße,Schreibvariante
+^Max Eydt-Straße,Max-Eyth-Straße,Schreibvariante (y statt yd)
+^Birgderhammer,Birgder Hammer,Schreibvariante mit Leerzeichen
+^Bornstahl,Bornstal,Schreibvariante
+^Groß-Hülsberg,Großhülsberg,Schreibvariante ohne Bindestrich
+^Buscherhof,Buscher Hof,Schreibvariante mit Leerzeichen
+^Villenstraße,Konrad-Adenauer-Straße,Quelle rga.de auf-virtueller-entdeckungstour
+^Garschagerheide,Garschager Heide,Schreibvariante mit Leerzeichen
+^Hasteraue,Haster Aue,Schreibvariante mit Leerzeichen
+^Hentzen-Allee,Hentzenallee,Schreibvariante ohne Bindestrich
+^Olperhöhe,Olper Höhe,Schreibvariante mit Leerzeichen
+^Hackenbergerstraße,Hackenberger Straße,Schreibvariante mit Leerzeichen
+^Hägenermühle,Hägener Mühle,Schreibvariante mit Leerzeichen
+^Klauserfeld,Klauser Feld,Schreibvariante mit Leerzeichen

@@ -1,0 +1,102 @@
+symbol,unterbranche_llm,frequency
+werkzeug_generisch,Werkzeugfabrik (generisch),844
+werkzeug_generisch,Werkzeug- und Maschinenfabrik,3
+werkzeug_generisch,Werkzeug- und Metallwarenfabrik,2
+werkzeug_generisch,Werkzeugindustrie (generisch),2
+saege,"Messerfabriken (Sägen, Papier-, Maschinenmesser)",172
+saege,Metallsägenfabrik,26
+saege,Messerfabrik (Sägen/Papier/Maschinen),12
+saege,Sägeangelnfabrik,8
+saege,Metallsägen-Fabrik,3
+saege,Sägen- und Werkzeughandel,2
+saege,Sägenschärferei,2
+saege,Metall- und Bandsägenfabrik,2
+saege,Sägen- und Werkzeugfabrik,2
+saege,Sägenhersteller,2
+saege,Sägen- und Messerfabrik,2
+saege,"Feilen-, Sägen- und Werkzeugfabrik",2
+saege,Sägeblätter (Kaltkreissäge),1
+saege,Bandsägenfabrik,1
+saege,Maschinen- und Sägenfabrik,1
+saege,Sägenherstellung (Plock- und Heftsägen),1
+saege,Sägen- und Maschinenmesserfabrik,1
+saege,Sägenfabrik,1
+saege,Kreissägenfabrik,1
+saege,Bandsägen-Hersteller,1
+saege,Sägenherstellung (Metall),1
+saege,Maschinenmesser- und Sägenfabrik,1
+saege,Bandsägen- und Bandmesserfabrik,1
+saege,Metall-Sägenfabrik,1
+saege,Spezial-Sägenmaschinen,1
+spezial,Spezialwerkzeugfabrik,59
+spezial,Holzbearbeitungswerkzeuge,16
+spezial,Präzisions-Maschinenwerkzeuge,14
+spezial,Scharnierherstellung,12
+spezial,Automobilwerkzeugfabrik/-handlung,12
+spezial,Stempel- und Gummifabrik,12
+spezial,Blechscherenfabrik,11
+spezial,Gartengeräte-Fabrik,5
+spezial,Maurer- und Stuckateurwerkzeugfabrik,5
+spezial,Siederohrdichtmaschinen-Fabrik,5
+spezial,Bergwerks- und Hüttenwerkzeug,4
+spezial,Automobil-Werkzeuge,4
+spezial,Schloss- und Schlüsselfabrik,4
+spezial,Fleischereimaschinenmesserfabrik,4
+spezial,Präzisionswerkzeugfabrik,4
+spezial,Schuhmacherwerkzeugfabrik,3
+spezial,Klingen- und Schneidwarenherstellung,3
+spezial,Gewindeschneidwerkzeuge,3
+spezial,Maschinenmesserfabrik (generisch),3
+spezial,Federnfabrik,2
+spezial,Leder-Treibriemenfabrik,2
+spezial,Spezialmesser für Fleischereimaschinen,2
+spezial,Kaffeemühlenfabrik,2
+spezial,Metall- und Celluloidwarenfabrik,1
+spezial,Werkzeughandel (generisch),1
+spezial,Blechscheren-Hersteller,1
+spezial,Windeisenherstellung,1
+spezial,Gartenscherenfabrik,1
+spezial,Blechscherenhersteller,1
+spezial,Automobilwerkzeugfabrik,1
+spezial,Bürstenherstellung (Gummi),1
+spezial,Werkzeughandelsgemeinschaft,1
+spezial,Federn- und Messerherstellung,1
+spezial,Werkzeugtaschen-Fabrik,1
+spezial,Holzbearbeitungswerkzeug,1
+spezial,Messer- und Federnherstellung,1
+spezial,Büchsenmacherei,1
+spezial,Werkzeughandel (Installation/Gewinde),1
+spezial,Präzisions-Werkzeugfabrik,1
+spezial,Lederriemenfabrik,1
+feile,Feilen- und Raspenfabrik,102
+feile,Feilen- und Raspenherstellung,19
+feile,Feilenherstellung/-handel,3
+feile,Uhrmacherfeilen-Herstellung,2
+feile,Feilenfabrik,2
+feile,Feilen-Fabrik,1
+feile,Feilenhersteller/-händler,1
+bohrer,Bohrerfabrik,49
+bohrer,Spiralbohrerfabrik,9
+bohrer,Bohrerfabrik (Holz/Bau),8
+bohrer,Bohrmaschinen- und Bohrerfabrik,4
+bohrer,Spiralbohrer- und Reibahlenfabrik,1
+bohrer,Bohrerfabrik (generisch),1
+bohrer,Bohrer- und Werkzeugfabrik,1
+schleifstein,Schleiferei,42
+schleifstein,Schleifsteinhandel,4
+schleifstein,Schleifmittelfabrik,4
+schleifstein,Polierscheibenfabrik,4
+schleifstein,Schleifscheibenfabrik,1
+zange,Zangenfabrik,50
+beitel,Beitel- und Hobeleisenfabrik,25
+beitel,Hobel- und Schreinerwerkzeugefabrik,7
+beitel,Hobel- und Schreinereiwerkzeugfabrik,2
+beitel,Sägen- und Hobelmesserhersteller,1
+beitel,Feilen- und Hobeleisenfabrik,1
+schraubstock,Schraubstockfabrik,11
+schraubstock,Schraubwerkzeugfabrik,7
+schraubstock,Schraubenfabrik und Façondreherei,3
+schraubstock,Schraubstock- und Werkzeugfabrik,1
+schraubstock,Schraubenfabrik,1
+schraubstock,Schraubenzieherherstellung,1
+hammer,Hämmerfabrik,10

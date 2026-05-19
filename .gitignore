@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+# Pipeline-Zwischenstände — werden vollständig aus src/ + data/ regeneriert
+output/

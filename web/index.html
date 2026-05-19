@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fafafa" />
+  <title>Gewerbe Remscheid 1935</title>
+  <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Title-Pille oben links -->
+  <div class="pill pill--title" id="titlePill">
+    <div class="pill__title">Gewerbe Remscheid 1935</div>
+    <div class="pill__sub"><span id="countLabel">9 073</span> Betriebe</div>
+  </div>
+
+  <!-- Filter-Pille (Chip-Leiste ein-/ausblenden) -->
+  <button class="pill pill--filter" id="filterToggle" type="button" aria-pressed="true" aria-label="Kategorien-Filter ein-/ausblenden">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M3 6h18M7 12h10M10 18h4"/></svg>
+    <span class="pill__filter-dot" id="filterDot" hidden></span>
+  </button>
+
+  <!-- Such-Pille oben rechts -->
+  <div class="pill pill--search" id="searchPill" data-state="collapsed">
+    <button class="pill__btn" id="searchToggle" aria-label="Suche öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    </button>
+    <input type="search" class="pill__input" id="searchInput" placeholder="Firma oder Inhaber suchen …" autocomplete="off" spellcheck="false" />
+    <button class="pill__btn pill__btn--close" id="searchClose" aria-label="Suche schließen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <!-- Such-Ergebnisliste -->
+  <div class="results" id="results" hidden></div>
+
+  <!-- Kategorien-Chips (oben mittig, scrollbar) -->
+  <div class="chips" id="chips"></div>
+
+  <!-- Werkzeug-Quick-Toggle unten links -->
+  <button class="pill pill--quick" id="toolToggle" type="button" aria-pressed="false">
+    <span class="pill__icon" aria-hidden="true">⚒</span>
+    <span class="pill__label">Nur Werkzeugindustrie</span>
+  </button>
+
+  <!-- Piktogramm-Modus -->
+  <button class="pill pill--piktogramm" id="piktoToggle" type="button" aria-pressed="false" aria-label="Werkzeug-Piktogramme ein-/ausblenden" title="Werkzeug-Piktogramme">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+  </button>
+
+  <!-- UI-Sichtbarkeit togglen, unten rechts -->
+  <button class="fab" id="uiToggle" type="button" aria-label="Bedienung ein-/ausblenden" title="Bedienung ein-/ausblenden">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+  </button>
+
+  <!-- Loading-Overlay -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <div>Daten werden geladen …</div>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
