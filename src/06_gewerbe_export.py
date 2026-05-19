@@ -22,7 +22,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 GEOCODED_FILE = REPO / "output" / "remscheid1935_geocoded.csv"
 MAPPING_FILE = REPO / "data" / "branchen_mapping.csv"
-WEB_DIR = REPO / "web" / "data"
+WEB_DIR = REPO / "docs" / "data"
 GEOJSON_FILE = WEB_DIR / "gewerbe.geojson"
 BRANCHEN_FILE = WEB_DIR / "branchen.json"
 

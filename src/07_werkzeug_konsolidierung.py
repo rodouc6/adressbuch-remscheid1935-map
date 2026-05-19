@@ -32,7 +32,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-GEOJSON_FILE = REPO / "web" / "data" / "gewerbe.geojson"
+GEOJSON_FILE = REPO / "docs" / "data" / "gewerbe.geojson"
 AUDIT_FILE = REPO / "data" / "werkzeug_konsolidierung.csv"
 WERKZEUG_KAT = "Werkzeugindustrie"
 
