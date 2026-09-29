@@ -63,7 +63,7 @@ enthält (Gebäude, Adresspunkt oder benanntes Objekt mit Hausnummer);
 `strasse`, wenn nur die Straße gefunden wurde (`class = highway`);
 sonst `ungefaehr` (Ortsteil, Hofschaft).
 
-**Firmenabgleich (3b).** Das Gewerbeverzeichnis führt eine Firma unter jeder
+**Firmenabgleich (3b) — in Arbeit.** Die Zuordnung wird noch nicht von 06 genutzt; die Karte zeigt weiterhin jeden Eintrag. Das Gewerbeverzeichnis führt eine Firma unter jeder
 ihrer Branchen erneut, oft in anderer Schreibweise. Verglichen wird nur
 innerhalb derselben `adresse_norm` (Zweigwerke an anderen Adressen bleiben
 getrennt). Namen werden normalisiert (Rechtsformen, `&`/`u.`/`und`,

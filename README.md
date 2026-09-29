@@ -1,11 +1,11 @@
 # Gewerbe in Remscheid 1935
 
-Eine interaktive Karte der Remscheider Betriebe aus dem Adressbuch von 1935,
+Eine interaktive Karte der Remscheider Gewerbe aus dem Adressbuch von 1935,
 und die Aufbereitung dahinter.
 
 **Zur Karte: <https://rodouc6.github.io/adressbuch-remscheid1935-map/>**
 
-![Die Karte von Remscheid mit farbigen Punkten für rund 9 000 Betriebe, oben die Filterleiste mit den Branchen-Kategorien](docs/bilder/karte-uebersicht.jpg)
+![Die Karte von Remscheid mit farbigen Punkten für rund 9 000 Gewerbe-Einträge, oben die Filterleiste mit den Branchen-Kategorien](docs/bilder/karte-uebersicht.jpg)
 
 ## Worum es geht
 
@@ -14,13 +14,13 @@ Einwohner, Behörden, Straßen und Gewerbe der Stadt. Freiwillige des Vereins f�
 Computergenealogie (CompGen) haben die 718 Seiten vollständig abgeschrieben; der
 Verein hat die Erfassung 2021 für den Kultur-Hackathon *Coding da Vinci
 Nieder.Rhein.Land* als offene Daten bereitgestellt. Dieses Projekt nimmt das
-**Gewerbeverzeichnis** daraus, verortet jeden Betrieb auf einer heutigen Karte
+**Gewerbeverzeichnis** daraus, verortet jeden Eintrag auf einer heutigen Karte
 und ordnet ihn einer Branche zu:
 
 - **9 361 Einträge** im Gewerbeverzeichnis, davon **9 073 auf der Karte**
 - **924 verschiedene Branchenbezeichnungen**, so wie die Quelle sie führt,
   zusammengefasst zu **17 Kategorien**
-- **Werkzeugindustrie** als Schwerpunkt: 1 685 Einträge von 1 171 Firmen, auf
+- **Werkzeugindustrie** als Schwerpunkt: 1 685 Einträge, auf
   Wunsch als Piktogramme (Säge, Feile, Zange, Hammer, …) dargestellt
 
 Auf der Karte lassen sich Kategorien ein- und ausblenden, Firmen und Inhaber
@@ -42,6 +42,8 @@ suchen und die Werkzeugbetriebe gesondert zeigen.
         │      Adressen vereinfachen    ◄── data/strassen_mapping.csv
         │  02  verorten über Nominatim (OpenStreetMap)
         │  03  Genauigkeit jedes Treffers bewerten
+        │  03b Einträge derselben Firma erkennen    ──►  data/firmen_abgleich.csv
+        │      (in Arbeit, fließt noch nicht in die Karte ein)
         │  04  Branche per Stichwortregeln vorschlagen  ──►  data/branchen_mapping.csv
         │  05  Branche per Sprachmodell prüfen          ──►  (dieselbe Datei)
         │  06  Kartendaten schreiben
@@ -74,14 +76,26 @@ Die Skripte, ihre Ein- und Ausgaben und der Ablauf im Einzelnen stehen in
   zerstört, Straßen wurden umbenannt und Häuser neu nummeriert. Auch ein
   „hausgenauer“ Treffer zeigt das heutige Haus mit dieser Nummer, nicht
   zwingend das von 1935.
-- **Verortung.** Von den 9 073 Betrieben auf der Karte sind 7 282 hausgenau
+- **Verortung.** Von den 9 073 Einträgen auf der Karte sind 7 282 hausgenau
   verortet, 1 674 nur auf die Straße und 117 nur ungefähr (Ortsteil oder
   Hofschaft). Die ungenauen Punkte sind auf der Karte blass mit farbigem Ring
-  gezeichnet; mehrere Betriebe derselben Straße liegen dann übereinander.
+  gezeichnet; mehrere Einträge derselben Straße liegen dann übereinander.
   288 Einträge ließen sich nicht verorten.
 - **Branchen sind Zuordnungen, keine Quellenangaben.** Die Kategorien stammen
   aus diesem Projekt, nicht aus dem Adressbuch. 52 Branchenbezeichnungen sind
-  noch als „prüfen“ markiert, 203 Betriebe blieben ohne Kategorie.
+  noch als „prüfen“ markiert, 203 Einträge blieben ohne Kategorie.
+- **Einträge, nicht Firmen.** Das Gewerbeverzeichnis ist nach Branchen
+  geordnet und führt eine Firma unter jeder ihrer Branchen erneut, oft in
+  anderer Schreibweise. Die Karte zeigt jeden Eintrag als eigenen Punkt; hinter
+  den 9 073 Punkten stehen nach vorläufigem Abgleich rund 7 200 Firmen. Das
+  Zusammenführen ist aufwendig, weil an einer Adresse oft mehrere Generationen
+  derselben Familie ein Gewerbe führten und die Abschrift viele
+  Schreibvarianten enthält. Schritt 03b bereitet es vor; die Prüfung von Hand
+  steht noch aus.
+- **Ein Werkzeug-Symbol je Adresse.** Sitzen mehrere Werkzeugfirmen an einer
+  Adresse, zeigt die Karte nur ein Symbol und die übrigen Firmen in dessen
+  Liste. Der Filter nach Werkzeugart prüft bisher nur dieses eine Symbol;
+  Firmen dahinter findet er nicht.
 - **Nur das Gewerbeverzeichnis.** Das Einwohnerverzeichnis (43 017 Einträge)
   wird mit verortet, erscheint aber nicht auf der Karte.
 - **Die Bezeichnungen stammen aus der Quelle.** Straßennamen der NS-Zeit
