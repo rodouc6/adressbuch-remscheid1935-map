@@ -16,6 +16,9 @@ Ausgaben:
   data/branchen_mapping.csv        in-place aktualisiert; neue Spalten
                                    `quelle` (= heuristik | llm), `begruendung`
 
+Zeilen mit `quelle = manuell` werden weder abgefragt noch ueberschrieben:
+so markierte Korrekturen von Hand ueberstehen jeden erneuten Lauf.
+
 Aufruf:
   python3 src/05_llm_branchen_klassifikation.py [--limit N]
 """
@@ -29,6 +32,8 @@ import time
 from pathlib import Path
 
 import requests
+
+from branchen import MAPPING_FIELDS
 
 REPO = Path(__file__).resolve().parent.parent
 MAPPING_FILE = REPO / "data" / "branchen_mapping.csv"
@@ -213,8 +218,8 @@ def main() -> int:
         r.setdefault("quelle", "")
         r.setdefault("begruendung", "")
 
-    todo = rows  # alle Branchen, nicht nur ungematchte
-    print(f"Mapping geladen: {len(rows)} Branchen — alle werden per LLM verifiziert")
+    todo = [r for r in rows if r["quelle"] != "manuell"]  # alle Branchen ausser Handkorrekturen
+    print(f"Mapping geladen: {len(rows)} Branchen — {len(todo)} werden per LLM verifiziert (ohne quelle=manuell)")
 
     cache = load_cache(CACHE_FILE)
     print(f"Cache-Eintraege: {len(cache)}")
@@ -250,6 +255,8 @@ def main() -> int:
     n_disagree = 0
     n_fallback = 0
     for r in rows:
+        if r["quelle"] == "manuell":
+            continue
         res = cache.get(r["erst_branche"])
         if not res or "error" in res:
             if r["heuristik_oberkategorie"] and r["heuristik_oberkategorie"] != "Sonstige / nicht klassifiziert":
@@ -270,15 +277,11 @@ def main() -> int:
             n_disagree += 1
         n_filled += 1
 
-    out_fields = ["erst_branche", "frequency", "unterbranche", "oberkategorie",
-                  "wz_2008", "wz_1933", "review_needed", "quelle",
-                  "heuristik_oberkategorie", "heuristik_unterbranche",
-                  "begruendung", "kommentar"]
     with open(MAPPING_FILE, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=out_fields)
+        w = csv.DictWriter(f, fieldnames=MAPPING_FIELDS)
         w.writeheader()
         for r in rows:
-            w.writerow({k: r.get(k, "") for k in out_fields})
+            w.writerow({k: r.get(k, "") for k in MAPPING_FIELDS})
 
     print()
     print(f"Mapping aktualisiert: {n_filled} Branchen per LLM klassifiziert")

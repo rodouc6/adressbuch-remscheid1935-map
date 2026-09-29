@@ -15,6 +15,12 @@ und schlaegt per Keyword-Heuristik eine 3-Ebenen-Klassifikation vor:
 Eingabe : output/remscheid1935_geocoded.csv (nur GewVz beruecksichtigt)
 Ausgabe : data/branchen_mapping.csv (Review-CSV, sortiert nach Frequenz)
 
+Existiert das Mapping bereits, wird es zusammengefuehrt statt ueberschrieben:
+  - bekannte Branchen: nur `frequency` und `heuristik_*` werden aktualisiert;
+    LLM-Ergebnis (Schritt 5), Begruendung und Kommentar bleiben erhalten
+  - neue Branchen: Heuristik-Vorschlag, `quelle = heuristik`
+  - nicht mehr vorkommende Branchen: bleiben mit `frequency = 0` stehen
+
 `review_needed = 1`  -> keine Regel hat gegriffen, Sichtung empfohlen
 `review_needed = 0`  -> Regel hat gegriffen, Vorschlag pruefen
 """
@@ -24,7 +30,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from branchen import extract_erst_branche
+from branchen import MAPPING_FIELDS, extract_erst_branche
 
 REPO = Path(__file__).resolve().parent.parent
 INPUT_FILE = REPO / "output" / "remscheid1935_geocoded.csv"
@@ -216,19 +222,42 @@ def main() -> int:
     print(f"Distinkte Erst-Branchen: {len(counter)}")
     print(f"Gesamtzeilen mit extrahierter Branche: {sum(counter.values())}")
 
+    bestand: dict[str, dict] = {}
+    if OUTPUT_FILE.exists():
+        with open(OUTPUT_FILE, encoding="utf-8", newline="") as f:
+            bestand = {r["erst_branche"]: r for r in csv.DictReader(f)}
+        print(f"Bestehendes Mapping: {len(bestand)} Branchen (wird zusammengefuehrt)")
+
+    rows: list[dict] = []
+    klass_counter: Counter[str] = Counter()
+    match_counter: Counter[str] = Counter()
+    n_neu = 0
+    for b, freq in counter.most_common():
+        ub, ok, wz, rev = klassifiziere(b)
+        klass_counter[ok] += freq
+        match_counter["ungematcht" if rev else "gematcht"] += freq
+        row = bestand.pop(b, None)
+        if row is None:
+            n_neu += 1
+            row = {"erst_branche": b, "unterbranche": ub, "oberkategorie": ok,
+                   "wz_2008": wz, "review_needed": rev, "quelle": "heuristik"}
+        row["frequency"] = freq
+        row["heuristik_oberkategorie"] = ok
+        row["heuristik_unterbranche"] = ub
+        rows.append(row)
+    for row in bestand.values():  # nicht mehr vorkommend: behalten, nicht verwerfen
+        row["frequency"] = 0
+        rows.append(row)
+
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["erst_branche", "frequency", "unterbranche", "oberkategorie",
-                    "wz_2008", "wz_1933", "review_needed", "kommentar"])
-        klass_counter: Counter[str] = Counter()
-        match_counter: Counter[str] = Counter()
-        for b, freq in counter.most_common():
-            ub, ok, wz, rev = klassifiziere(b)
-            klass_counter[ok] += freq
-            match_counter["ungematcht" if rev else "gematcht"] += freq
-            w.writerow([b, freq, ub, ok, wz, "", rev, ""])
+        w = csv.DictWriter(f, fieldnames=MAPPING_FIELDS)
+        w.writeheader()
+        for row in rows:
+            w.writerow({k: row.get(k, "") for k in MAPPING_FIELDS})
 
+    print(f"Neue Branchen            : {n_neu}")
+    print(f"Nicht mehr vorkommend    : {len(bestand)} (frequency = 0)")
     print()
     print(f"Geschrieben: {OUTPUT_FILE}")
     print()

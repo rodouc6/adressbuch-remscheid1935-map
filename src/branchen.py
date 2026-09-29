@@ -38,3 +38,10 @@ def extract_erst_branche(firmenname: str) -> str:
             continue
         return buf
     return buf  # Edge-Case: Letztes Token war unvollstaendig - trotzdem zurueckgeben
+
+
+# Spalten von data/branchen_mapping.csv (geschrieben von Schritt 4 und 5)
+MAPPING_FIELDS = ["erst_branche", "frequency", "unterbranche", "oberkategorie",
+                  "wz_2008", "wz_1933", "review_needed", "quelle",
+                  "heuristik_oberkategorie", "heuristik_unterbranche",
+                  "begruendung", "kommentar"]
