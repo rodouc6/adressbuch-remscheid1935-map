@@ -1,5 +1,19 @@
 # Werkzeugindustrie und Gewerbe in Remscheid, 1935
 
+> [!WARNING]
+> **Vorläufiger Arbeitsstand.** Karte und Daten sind noch nicht überarbeitet
+> und sollten nicht ungeprüft zitiert oder ausgewertet werden. Offen sind vor
+> allem:
+> - **Mehrfacheinträge:** Eine Firma steht unter jeder ihrer Branchen erneut;
+>   hinter den 9 073 Punkten stehen vorläufig rund 7 200 Firmen.
+> - **Schreibvarianten und Generationen:** Die Abschrift enthält viele
+>   Schreibfehler, und an vielen Adressen arbeiteten mehrere Generationen
+>   einer Familie. Beides ist noch nicht bereinigt.
+> - **Branchenzuordnung:** Sie stammt größtenteils von einem Sprachmodell;
+>   52 Bezeichnungen sind als „prüfen“ markiert.
+>
+> Einzelheiten unter [Grenzen der Daten](#grenzen-der-daten).
+
 Eine interaktive Karte der Remscheider Gewerbe aus dem Adressbuch von 1935,
 und die Aufbereitung dahinter.
 
