@@ -2,7 +2,8 @@
 """
 Schritt 1: Filterung und Adressnormalisierung.
 
-Eingabe : data/remscheidABNRW1935.csv         (TSV trotz .csv-Endung)
+Eingabe : data/remscheidABNRW1935.csv         (TSV trotz .csv-Endung; Anfuehrungszeichen
+                                              gehoeren zum Text, daher QUOTE_NONE)
 Ausgabe : output/remscheid1935_geovorbereitung.csv
 
 - Filtert auf EinwVz + GewVz (BehVz, AllgTl, StrVz, Nachtrag ausgeschlossen).
@@ -105,7 +106,7 @@ def main() -> int:
 
     with open(INPUT_FILE, encoding="utf-8", newline="") as fin, \
          open(OUTPUT_FILE, "w", encoding="utf-8", newline="") as fout:
-        reader = csv.DictReader(fin, delimiter="\t", restkey="_extra")
+        reader = csv.DictReader(fin, delimiter="\t", quoting=csv.QUOTE_NONE, restkey="_extra")
         out_fields = list(reader.fieldnames or []) + ["generation", "adresse_norm", "geoadresse"]
         writer = csv.DictWriter(fout, fieldnames=out_fields)
         writer.writeheader()
