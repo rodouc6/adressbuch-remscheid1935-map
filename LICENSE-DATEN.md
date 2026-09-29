@@ -28,6 +28,29 @@ Koordinaten und Genauigkeitsstufen, Branchenzuordnung
 (`data/branchen_mapping.csv`), Werkzeug-Zuordnung
 (`data/werkzeug_konsolidierung.csv`) und die Kartendaten in `docs/data/`.
 
+## Bildnachweise: Werkzeug-Piktogramme
+
+Die Piktogramme in `data/piktogramme/` (Web-Fassung: `docs/icons/werkzeug/`)
+stammen von [Flaticon](https://www.flaticon.com) und stehen unter der
+[Flaticon-Lizenz](https://www.flaticon.com/legal) (kostenlos mit
+Namensnennung), **nicht** unter CC BY-SA. Die Namensnennung auf der Website
+steht in der Quellenzeile der Karte. Die Zuordnung ist per Bildabgleich
+geprüft: Die Umrisse aller zehn Dateien sind mit den Flaticon-Vorlagen
+deckungsgleich.
+
+| Piktogramm | Web-Datei | Flaticon-Icon | Autor |
+|---|---|---|---|
+| Beitel | `beitel.png` | [Beitel, 2085451](https://www.flaticon.com/de/kostenloses-icon/beitel_2085451) | [Magnific](https://www.flaticon.com/authors/magnific) |
+| Feile | `feile.png` | [Raspel, 8836998](https://www.flaticon.com/free-icon/rasp_8836998) | [Magnific](https://www.flaticon.com/authors/magnific) |
+| Hammer | `hammer.png` | [Hammer, 8661121](https://www.flaticon.com/de/kostenloses-icon/hammer_8661121) | Icon Mela |
+| Schleifstein | `schleifstein.png` | [Schärfen, 16508300](https://www.flaticon.com/de/kostenloses-icon/scharfen_16508300) | ronindesign |
+| Schraubstock | `schraubstock.png` | [Schraubstock, 252804](https://www.flaticon.com/de/kostenloses-icon/schraubstock_252804) | [Smashicons](https://www.flaticon.com/authors/smashicons) |
+| Spiralbohrer | `bohrer.png` | [Bohrer, 12479160](https://www.flaticon.com/de/kostenloses-icon/bohrer_12479160) | [juicy_fish](https://www.flaticon.com/authors/juicy-fish) |
+| Stern | `spezial.png` | [Stern, 118669](https://www.flaticon.com/free-icon/star_118669) | Revicon |
+| Säge | `saege.png` | [Säge, 385637](https://www.flaticon.com/de/kostenloses-icon/sage_385637) | [Magnific](https://www.flaticon.com/authors/magnific) |
+| Zange | `zange.png` | [Zange, 8043292](https://www.flaticon.com/de/kostenloses-icon/zange_8043292) | Mayor Icons |
+| gekreuzte Werkzeuge | `werkzeug_generisch.png` | [Werkzeug, 7414126](https://www.flaticon.com/de/kostenloses-icon/werkzeug_7414126) | Uniconlabs |
+
 ## Herkunft einzelner Angaben
 
 - Koordinaten: geokodiert über Nominatim, © OpenStreetMap-Mitwirkende. Nach der

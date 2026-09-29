@@ -89,7 +89,13 @@ const map = new maplibregl.Map({
   minZoom: 10,
   maxZoom: 18,
   maxBounds: BERGISCHES_LAND,
-  attributionControl: true,
+  // Namensnennung fuer Daten (CC BY-SA 4.0) und Piktogramme (Flaticon-Lizenz);
+  // die vollstaendigen Nachweise mit allen Autoren stehen in LICENSE-DATEN.md
+  attributionControl: {
+    customAttribution:
+      'Daten: <a href="https://github.com/rodouc6/adressbuch-remscheid1935-map/blob/main/LICENSE-DATEN.md" target="_blank" rel="noopener">CompGen, CC BY-SA 4.0</a> · ' +
+      'Piktogramme: <a href="https://github.com/rodouc6/adressbuch-remscheid1935-map/blob/main/LICENSE-DATEN.md#bildnachweise-werkzeug-piktogramme" target="_blank" rel="noopener">Flaticon (Autoren)</a>',
+  },
 });
 
 const COLOR_EXPR = ["match", ["get", "oberkategorie"]];
@@ -104,6 +110,9 @@ const GENAUIGKEIT_TEXT = {
 };
 
 map.on("load", () => {
+  if (window.matchMedia("(max-width: 640px)").matches) {
+    document.querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");
+  }
   map.addSource("gewerbe", {
     type: "geojson",
     data: filteredGeoJSON(),
