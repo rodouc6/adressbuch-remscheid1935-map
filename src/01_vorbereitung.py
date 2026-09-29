@@ -102,6 +102,7 @@ def main() -> int:
     n_adr_changed = 0
     n_adr_mapped = 0
     n_adr_empty = 0
+    n_id_repariert = 0
     section_counts: dict[str, int] = {}
 
     with open(INPUT_FILE, encoding="utf-8", newline="") as fin, \
@@ -137,7 +138,11 @@ def main() -> int:
             row["adresse_norm"] = adr_norm
 
             row["geoadresse"] = build_geoadresse(adr_norm, row.get("Ortsname", "") or "")
-            row.pop("_extra", None)
+            # Vereinzelt verrutscht die id durch einen Tabulator zu viel in eine Zusatzspalte
+            extra = [x for x in (row.pop("_extra", None) or []) if x.strip()]
+            if not (row.get("id") or "").strip() and extra and extra[-1].strip().isdigit():
+                row["id"] = extra[-1].strip()
+                n_id_repariert += 1
             writer.writerow(row)
             n_out += 1
 
@@ -148,6 +153,7 @@ def main() -> int:
     print(f"Adressen normiert  : {n_adr_changed}")
     print(f"  davon umbenannt  : {n_adr_mapped} (Strassen-Mapping angewandt)")
     print(f"Adressen leer      : {n_adr_empty}")
+    print(f"id repariert       : {n_id_repariert} (aus verrutschter Spalte)")
     print(f"Geschrieben nach   : {OUTPUT_FILE}")
     return 0
 

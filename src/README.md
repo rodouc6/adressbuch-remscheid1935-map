@@ -1,6 +1,6 @@
 # Pipeline — Adressbuch Remscheid 1935
 
-Sieben Schritte von der CompGen-Erfassung zu den Kartendaten in `docs/data/`.
+Acht Schritte von der CompGen-Erfassung zu den Kartendaten in `docs/data/`.
 Alle Skripte werden aus dem Repository-Hauptordner aufgerufen.
 
 ## Voraussetzungen
@@ -16,6 +16,8 @@ Alle Skripte werden aus dem Repository-Hauptordner aufgerufen.
 python3 src/01_vorbereitung.py              # Filter + Adressnormalisierung
 python3 src/02_geocodierung.py              # Nominatim, resume-fähig
 python3 src/03_join_geojson.py              # Koordinaten + Genauigkeit anfügen
+python3 src/03b_firmenabgleich.py           # Einträge derselben Firma erkennen -> Prüfliste
+python3 tools/pruefliste.py                 # Prüfliste im Browser durchgehen (optional)
 python3 src/04_branchen_klassifikation.py   # Stichwortregeln -> branchen_mapping.csv
 python3 src/05_llm_branchen_klassifikation.py [--limit N]   # Sprachmodell, resume-fähig
 python3 src/06_gewerbe_export.py            # Kartendaten schreiben
@@ -41,6 +43,8 @@ Tests (ohne Nominatim und Sprachmodell): `python3 -m unittest discover tests`
 | `output/remscheid1935_geocoded.csv` | 03 | alle Zeilen + Koordinaten + `genauigkeit` |
 | `output/remscheid1935.geojson` | 03 | alle Zeilen mit Treffer |
 | `output/geocoding_fehlschlaege.csv` | 03 | distinkte Adressen ohne Treffer + Häufigkeit |
+| `data/firmen_abgleich.csv` | 3b, von Hand | Prüfliste: ähnliche Namen an derselben Adresse, Spalte `entscheidung` (ja/nein) |
+| `output/firmen_zuordnung.csv` | 3b | GewVz-`id` → `firma_id` |
 | `data/branchen_mapping.csv` | 04, 05 | Erst-Branche → Unterbranche, Oberkategorie, WZ 2008 |
 | `output/llm_branchen_cache.json` | 05 | Antworten des Sprachmodells je Erst-Branche |
 | `docs/data/gewerbe.geojson` | 06, 07 | GewVz-Punkte für die Karte |
@@ -58,6 +62,19 @@ die erste passende Regel aus `strassen_mapping.csv`. Generationszusätze
 enthält (Gebäude, Adresspunkt oder benanntes Objekt mit Hausnummer);
 `strasse`, wenn nur die Straße gefunden wurde (`class = highway`);
 sonst `ungefaehr` (Ortsteil, Hofschaft).
+
+**Firmenabgleich (3b).** Das Gewerbeverzeichnis führt eine Firma unter jeder
+ihrer Branchen erneut, oft in anderer Schreibweise. Verglichen wird nur
+innerhalb derselben `adresse_norm` (Zweigwerke an anderen Adressen bleiben
+getrennt). Namen werden normalisiert (Rechtsformen, `&`/`u.`/`und`,
+`Gebr.`, `Wwe.`, Umlaute, Satzzeichen); gleicher Schlüssel heißt automatisch
+dieselbe Firma. Nie zusammengeführt werden verschiedene Generationen
+(`d. J.`/`d. Ä.`) und Personen mit unverträglichem Vornamen (`Artur`/`Richard`;
+`Wilh.`/`Wilhelm` ist verträglich). Ähnliche Namen (Abkürzungen, Tippfehler,
+Generationszusatz nur bei einem) landen in `data/firmen_abgleich.csv`.
+Die Spalte `entscheidung` füllt man von Hand, am bequemsten mit
+`python3 tools/pruefliste.py` (Tasten J/N, ←/→; jede Entscheidung wird sofort
+gespeichert). Entscheidungen überstehen jeden neuen Lauf.
 
 **Erst-Branche (04, 06).** Die erste Angabe nach dem Firmennamen im Feld
 `Firmenname`, Rechtsformen wie `G.m.b.H.` übersprungen, zerteilte Angaben wie

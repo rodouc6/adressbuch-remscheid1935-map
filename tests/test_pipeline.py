@@ -21,6 +21,7 @@ from branchen import MAPPING_FIELDS, extract_erst_branche  # noqa: E402
 vorbereitung = importlib.import_module("01_vorbereitung")
 join = importlib.import_module("03_join_geojson")
 klassifikation = importlib.import_module("04_branchen_klassifikation")
+abgleich = importlib.import_module("03b_firmenabgleich")
 werkzeug = importlib.import_module("07_werkzeug_konsolidierung")
 
 
@@ -80,6 +81,77 @@ class GenauigkeitTest(unittest.TestCase):
     def test_postleitzahl_ist_keine_hausnummer(self):
         self.assertEqual(join.genauigkeit("Salemstraße, Alt-Remscheid, 42853, Deutschland", "highway"), "strasse")
         self.assertEqual(join.genauigkeit("Haddenbach, Rath, Remscheid, 42855, Deutschland", "place"), "ungefaehr")
+
+
+class FirmenabgleichTest(unittest.TestCase):
+    S = staticmethod(abgleich.schluessel)
+
+    def test_schreibvarianten_ergeben_gleichen_schluessel(self):
+        for a, b in [
+            ("P. A. von der Crone G.m.b.H.", "P. A. von der Crone"),
+            ("Otto Siebert & Fritz Ackermann", "Otto Siebert u. Fritz Ackermann"),
+            ("Gebr. Everling", "Gebrüder Everling"),
+            ("Hans Kögler", "Hans Koegler"),
+            ("Felix Großer", "Felix Grosser"),
+            ("Gebr. Mellewigt & Comp. G.m.b.H.", "Gebr. Mellewigt & Comp. GmbH"),
+            ("Hermann Birkenstock Wwe.", "Hermann Birkenstock Ww."),
+        ]:
+            self.assertEqual(self.S(a), self.S(b), (a, b))
+
+    def test_sperren(self):
+        self.assertTrue(abgleich.gesperrt("Karl Pauel d. Ä.", "Karl Pauel d. J."))
+        self.assertTrue(abgleich.gesperrt("Artur Winterhoff", "Richard Winterhoff"))
+        self.assertFalse(abgleich.gesperrt("Wilh. Kesting", "Wilhelm Kesting"))
+        self.assertFalse(abgleich.gesperrt("C. Gommann & Co.", "E. Gommann & Co."))  # Firma, keine Person
+
+    def test_bewertung(self):
+        self.assertEqual(abgleich.bewerte("Gottl. Oeckinghaus", "Gottlieb Oeckinghaus")[1], "Abkürzung")
+        self.assertEqual(abgleich.bewerte("Rudolf Koll", "Rudolf Koll d. J.")[1], "Generationszusatz nur bei einem")
+        self.assertIsNone(abgleich.bewerte("Artur Winterhoff", "Richard Winterhoff"))
+        self.assertIsNone(abgleich.bewerte("Karl Pauel & Sohn", "Emil Lux"))
+
+    def test_entscheidungen_bleiben_erhalten(self):
+        d = Path(tempfile.mkdtemp())
+        abgleich.REPO = d
+        abgleich.INPUT_FILE = d / "geocoded.csv"
+        abgleich.PRUEF_FILE = d / "pruef.csv"
+        abgleich.ZUORDNUNG_FILE = d / "zuordnung.csv"
+        with open(abgleich.INPUT_FILE, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f)
+            w.writerow(["page", "id", "lastname", "firstname", "Firmenname", "adresse_norm"])
+            w.writerows([
+                ["GewVz-1", "1", "", "", "Crone G.m.b.H., Sägenfabrik", "Weg 1"],
+                ["GewVz-1", "2", "", "", "Crone, G.m.b.H., Werkzeugfabrik", "Weg 1"],
+                ["GewVz-2", "3", "", "", "Gottl. Oeckinghaus, Feilenfabrik", "Weg 2"],
+                ["GewVz-2", "4", "", "", "Gottlieb Oeckinghaus, Werkzeugfabrik", "Weg 2"],
+                ["GewVz-3", "5", "", "", "Gottlieb Oeckinghaus, Schleiferei", "Weg 9"],
+            ])
+
+        def zuordnung():
+            with open(abgleich.ZUORDNUNG_FILE, encoding="utf-8") as f:
+                return {r["id"]: r["firma_id"] for r in csv.DictReader(f)}
+
+        still(abgleich.main)
+        z = zuordnung()
+        self.assertEqual(z["1"], z["2"])      # automatisch: gleicher Name, gleiche Adresse
+        self.assertNotEqual(z["3"], z["4"])   # Abkuerzung: nur Vorschlag
+        self.assertNotEqual(z["4"], z["5"])   # andere Adresse: nie zusammen
+
+        with open(abgleich.PRUEF_FILE, encoding="utf-8") as f:
+            zeilen = list(csv.DictReader(f))
+        self.assertEqual(len(zeilen), 1)
+        zeilen[0]["entscheidung"] = "ja"
+        with open(abgleich.PRUEF_FILE, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, abgleich.PRUEF_FIELDS)
+            w.writeheader()
+            w.writerows(zeilen)
+
+        still(abgleich.main)
+        still(abgleich.main)  # zweiter Lauf darf die Entscheidung nicht verwerfen
+        z = zuordnung()
+        self.assertEqual(z["3"], z["4"])
+        with open(abgleich.PRUEF_FILE, encoding="utf-8") as f:
+            self.assertEqual(next(csv.DictReader(f))["entscheidung"], "ja")
 
 
 class MappingZusammenfuehrenTest(unittest.TestCase):

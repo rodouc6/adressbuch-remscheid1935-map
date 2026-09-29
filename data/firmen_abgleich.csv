@@ -1,0 +1,325 @@
+adresse,name_a,name_b,eintraege_a,eintraege_b,branchen_a,branchen_b,aehnlichkeit,grund,entscheidung,kommentar,schluessel_a,schluessel_b
+Alleestraße 77,Adolf Güldenring,Adolf Güldenring d. Ä.,1,2,"Buch-, Kunst-, Schreibwaren- u. Musikalienhandlung","Muskinstrumente-, Musikapparatehandlung | Radioanlagen u. Geschäft",1.000,Generationszusatz nur bei einem,,,adolfgueldenring|,adolfgueldenring|ä
+Alter Markt 11,Rudolf Koll,Rudolf Koll d. J.,2,1,Gold- u. Silberschmied | Optiker,Uhrmacher u. Uhrwarenhandlung,1.000,Generationszusatz nur bei einem,,,rudolfkoll|,rudolfkoll|j
+Baisieperstraße 80,Karl Hessenbruch,Karl Hessenbruch d. Ä.,1,2,"Kohlen-, Koks- u. Brennholzhandlung","Gast- u. Schankwirtschaft | Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",1.000,Generationszusatz nur bei einem,,,karlhessenbruch|,karlhessenbruch|ä
+Bremerstraße 38,Karl Beitzer,Karl Beitzer d. J.,1,1,Gast- u. Schankwirtschaft,Schlosserei,1.000,Generationszusatz nur bei einem,,,karlbeitzer|,karlbeitzer|j
+Daniel-Schürmann-Straße 24,Hugo Bitzer,Hugo Bitzer d. J.,1,2,Export,Export | Werkzeugfabrik,1.000,Generationszusatz nur bei einem,,,hugobitzer|,hugobitzer|j
+Greulingstraße 49,Ferdinand Schmidt,Ferdinand Schmidt d. J.,1,1,Kaffeewirtschaft,Konditorei,1.000,Generationszusatz nur bei einem,,,ferdinandschmidt|,ferdinandschmidt|j
+Haddenbach 1,Max Rauhaus,Max Rauhaus d. Ä.,1,1,Grob- u. Kleinschmiederei,Werkzeugfabrik,1.000,Generationszusatz nur bei einem,,,maxrauhaus|,maxrauhaus|ä
+Hastenerstraße 16,Julius Büddicker,Julius Büddicker d. J.,2,2,Bauschreinerei | Beerdigungsinstitut,Möbelhandlung | Schreinerei,1.000,Generationszusatz nur bei einem,,,juliusbueddicker|,juliusbueddicker|j
+Hindenburgstraße 31,Wilhelm Söhngen,Wilhelm Söhngen d. J.,1,1,Radioanlagen u. Geschäft,Elektrische Kraft- u. Lichtanlagen,1.000,Generationszusatz nur bei einem,,,wilhelmsoehngen|,wilhelmsoehngen|j
+Honsbergerstraße 27,Gustav Mäuler,Gustav Mäuler d. J.,1,1,Fuhrgeschäft,Fernlastzüge,1.000,Generationszusatz nur bei einem,,,gustavmaeuler|,gustavmaeuler|j
+Hütz 12a,Otto Böntgen,Otto Böntgen d. Ä.,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",1.000,Generationszusatz nur bei einem,,,ottoboentgen|,ottoboentgen|ä
+Johannesstraße 10,Ernst Schmidt,Ernst Schmidt d. J.,2,1,Bauunternehmung | Technisches Baubüro Mit Bauausführung,Handelsvertreter,1.000,Generationszusatz nur bei einem,,,ernstschmidt|,ernstschmidt|j
+Kirchhofstraße 26,Hermann Kaiser,Hermann Kaiser d. Ä.,1,1,Dienstmann,Auktionatoren u. Taxatoren,1.000,Generationszusatz nur bei einem,,,hermannkaiser|,hermannkaiser|ä
+Kratzbergerstraße 32,Max König,Max König d. J.,1,1,Schleifsteinhandlung,Industriebedarf,1.000,Generationszusatz nur bei einem,,,maxkoenig|,maxkoenig|j
+Kölner Straße 72,Heinrich Lohmann,Heinrich Lohmann d. Ä,1,1,Bedachungsgeschäft,Bauklempnerei,1.000,Generationszusatz nur bei einem,,,heinrichlohmann|,heinrichlohmann|ä
+Königstraße 174,Wilh. Hake,Wilh. Hake d. J.,1,1,Werkzeugfabrik,Feilen- u. Raspenfabrik,1.000,Generationszusatz nur bei einem,,,wilhhake|,wilhhake|j
+Morsbach 42,Walter Koll,Walter Koll d. J.,1,1,Mechaniker,Kraftfahrzeug-Reparaturwerkstätte,1.000,Generationszusatz nur bei einem,,,walterkoll|,walterkoll|j
+Oberhützerstraße 44a,Gottlieb Paas,Gottlieb Paas d. Ä.,1,1,Lebensmittelgroßhandlung,Kartoffelgroßhandlung,1.000,Generationszusatz nur bei einem,,,gottliebpaas|,gottliebpaas|ä
+Raderstraße 16,Wilhelm Kuhlendahl,Wilhelm Kuhlendahl d. Ä.,1,1,Bauer u. Landwirt,Gast- u. Schankwirtschaft,1.000,Generationszusatz nur bei einem,,,wilhelmkuhlendahl|,wilhelmkuhlendahl|ä
+Remscheiderstraße 300a,Karl Beitzel,Karl Beitzel d. Ä.,1,2,"Kohlen-, Koks- u. Brennholzhandlung",Ferntransporte | Fuhrgschäft,1.000,Generationszusatz nur bei einem,,,karlbeitzel|,karlbeitzel|ä
+Remscheiderstraße 312,Karl von den Eicken,Karl von den Eicken d. J.,1,1,Werkzeuge,Schleiferei,1.000,Generationszusatz nur bei einem,,,karlvondeneicken|,karlvondeneicken|j
+Scheiderstraße 13,Wilh. Kesting,Wilh. Kesting d. J.,2,1,Bauschreinerei | Schreinerei,Lastkraftwagen- und Omnibusbetrieb,1.000,Generationszusatz nur bei einem,,,wilhkesting|,wilhkesting|j
+Tyrol 1,Otto Schmidt,Otto Schmidt d. J.,1,1,Eisen- u. Metallgießerei,"Gelb-, Aluminiumgießerei u. Messingwarenfabrik",1.000,Generationszusatz nur bei einem,,,ottoschmidt|,ottoschmidt|j
+Tyrol 1,Otto Schmidt,Otto Schmidt d. Ä.,1,1,Eisen- u. Metallgießerei,Gast- u. Schankwirtschaft,1.000,Generationszusatz nur bei einem,,,ottoschmidt|,ottoschmidt|ä
+Unterhützerstraße 6,Karl Noll,Karl Noll d. J.,1,3,Bauer und Landwirt,Autotransporte | Fuhrgeschäft | Güterfernverkehr,1.000,Generationszusatz nur bei einem,,,karlnoll|,karlnoll|j
+Vieringhausen 46a,Otto Schumacher,Otto Schumacher d. J.,1,1,Güterbestätter,Fuhrgeschäft,1.000,Generationszusatz nur bei einem,,,ottoschumacher|,ottoschumacher|j
+Waldstraße 17,Rob. Christians Frau,Rob. Christians d. Ä. Frau,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung","Obst-, Konserven- und Gemüsehandlung",1.000,Generationszusatz nur bei einem,,,robchristiansfrau|,robchristiansfrau|ä
+Wüste 7,Emil Kopf,Emil Kopf d. J.,1,1,Bauer und Landwirt,"Mehl-, Frucht- u. Futtermittelhandlung",1.000,Generationszusatz nur bei einem,,,emilkopf|,emilkopf|j
+Ziegelstraße 37,Philipp Grau,Philipp Grau d. Ä.,1,1,Bauschreinerei,Schreinerei,1.000,Generationszusatz nur bei einem,,,philippgrau|,philippgrau|ä
+Alleestraße 103,J. G. Arns Kom.-Ges.,Joh. Gottl. Arns,2,3,Messer u. Federn | Messern u. Federn,"Landwirtschaftliche Maschinen u. Gerätefabrik | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen | Werkzeugfabrik",0.990,Abkürzung,,,jgarns|,johgottlarns|
+Alleestraße 118,Josef Müller,Jos. Müller,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung","Drogen-, Chemikalien-, Farbwarenhandlung",0.990,Abkürzung,,,josefmueller|,josmueller|
+Alleestraße 29,Gottlieb Schmidt,Gottl. Schmidt,1,7,gegr. 1841,Auswanderervermittlung und Reisebüro | Briefmarken- u. Notgeldvertrieb | Buch- u. Steindruckerei | gegr. 1841,0.990,Abkürzung,,,gottliebschmidt|,gottlschmidt|
+Alleestraße 31,Robert Sackermann jun.,Rob. Sackermann d. J.,1,1,Feinkostgeschäft,Fischhandlung,0.990,Abkürzung,,,robertsackermann|j,robsackermann|j
+Alleestraße 32,Wilhelm Hilverkus,Wilh. Hilverkus,1,3,Mechaniker,Nähmaschinen-Reparaturkwerkstätte | Nähmaschinenhandlung | Wasch- u. Wringmaschinen-Reparaturwerkstätte,0.990,Abkürzung,,,wilhelmhilverkus|,wilhhilverkus|
+Alleestraße 40,Walter Kaiser,Walt. Kaiser,2,1,"Drogen-, Chemikalien-, Farbwarenhandlung | Kleinhandlung mit Spirituosen",Parfümerie- u. Seifenhandlung,0.990,Abkürzung,,,walterkaiser|,waltkaiser|
+Alleestraße 78,Julius Stepponat,Jul. Stepponat,2,1,"Fischhandlung | Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Feinkostgeschäft,0.990,Abkürzung,,,juliusstepponat|,julstepponat|
+Alleestraße 84,Heinr. Bossenberger,Heinrich Bossenberger,1,1,Kleidermacher (Schneider,Manufaktur- u. Tuchhandlung,0.990,Abkürzung,,,heinrbossenberger|,heinrichbossenberger|
+Alleestraße 84,Wilh. Binner,Wilhelm Binner,1,1,"Buch-, Kunst-, Schreibwaren- u. Musikalienhandlung","Papier-, Zeichen-, Packmaterialienhandlung",0.990,Abkürzung,,,wilhbinner|,wilhelmbinner|
+Altestraße 9,Wilhelm Quast,Wilh. Quast,1,1,Lastkraftwagen- und Omnibusbetrieb,Fuhrgeschäft,0.990,Abkürzung,,,wilhelmquast|,wilhquast|
+Am Holscheidsberg 22,Matth. Hamerski,Matthias Hamerski,1,1,Autovermietungen,Heißmangel,0.990,Abkürzung,,,matthhamerski|,matthiashamerski|
+Am Holscheidsberg 31,Aug. Moog,August Moog,1,1,Pferdehändler,Fuhrgeschäft,0.990,Abkürzung,,,augmoog|,augustmoog|
+Barmerstraße 8,Gustav Kottsieper d. J.,Gust. Kottsieper d. J.,1,1,Möbelhandlung,Blumenhandlung,0.990,Abkürzung,,,gustavkottsieper|j,gustkottsieper|j
+Baumschulenweg 7,Walter Müller,Walt. Müller,2,1,Baumschule | Blumenhandlung,Gärtnerei u. Landschaftsgärtnerei,0.990,Abkürzung,,,waltermueller|,waltmueller|
+Berghausen 1,Gottl. Corts K.-G.,Gottlieb Corts Kom.-Ges.,1,3,Brückenwaagenbetrieb,Export | Feilen- u. Raspenfabrik | Werkzeugfabrik,0.990,Abkürzung,,,gottlcorts|,gottliebcorts|
+Berlinerstraße 14,Josef Mangels,Jos. Mangels,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Feinkostgeschäft,0.990,Abkürzung,,,josefmangels|,josmangels|
+Bismarckstraße,Friedr. Ellerbrock,Friedrich Ellerbrock,1,1,Motorradreparaturwerkstätte,Kraftfahrzeug-Reparaturwerkstätte,0.990,Abkürzung,,,friedrellerbrock|,friedrichellerbrock|
+Bismarckstraße 10,Wilhelm Witzel,Wilh. Witzel,2,1,"Auswanderervermittlung und Reisebüro | Buch-, Kunst-, Schreibwaren- u. Musikalienhandlung",Geschäfts- u. Kopierbücherfabrik,0.990,Abkürzung,,,wilhelmwitzel|,wilhwitzel|
+Bismarckstraße 2,Hermann Sieper,Herm. Sieper,2,1,Drechslerei und Heftemacherei | Spielwarenhandlung,Pfeifen- und Stöckehandlung,0.990,Abkürzung,,,hermannsieper|,hermsieper|
+Bismarckstraße 32,Heinrich Welke,Heinr. Welke,1,2,Konditorei,Hotel | Kaffeewirtschaft,0.990,Abkürzung,,,heinrichwelke|,heinrwelke|
+Bismarckstraße 38,Josef Schilling,Jos. Schilling,2,1,Optiker | Uhrmacher u. Uhrwarenhandlung,Gold- u. Silberschmiede,0.990,Abkürzung,,,josefschilling|,josschilling|
+Bismarckstraße 43,Josef Schroers,Jos. Schroers,1,1,Zigarren- u. Tabakgeschäft,Losehändler,0.990,Abkürzung,,,josefschroers|,josschroers|
+Bismarckstraße 60,Theodor Ruthenbeck,Theod. Ruthenbeck,1,1,Radioanlagen u. Geschäft,Elektrische Kraft- u. Lichtanlagen,0.990,Abkürzung,,,theodorruthenbeck|,theodruthenbeck|
+Bismarckstraße 92,Wilhelm Huckenbeck,Wilh. Huckenbeck,1,2,Bauschreinerei,Möbelhandlung | Schreinerei,0.990,Abkürzung,,,wilhelmhuckenbeck|,wilhhuckenbeck|
+Bliedinghauserstraße 6,Hermann Hammerschmidt,Herm. Hammerschmidt,1,2,Klempner und Installationsgeschäft,Sanitäre Anlagen | Zentralheizungs-Bauanstalt,0.990,Abkürzung,,,hermannhammerschmidt|,hermhammerschmidt|
+Blumenstraße 3,Walt. Besser,Walter Besser,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung","Drogen-, Chemikalien-, Farbwarenhandlung",0.990,Abkürzung,,,waltbesser|,walterbesser|
+Bornerstraße 53,Richard Motte d. Ä.,Rich. Motte,1,1,Fuhrgeschäft,Bauer u. Landwirt,0.990,Abkürzung,,,richardmotte|ä,richmotte|
+Bornerstraße 65,Wilhelm Kötter,Wilh. Kötter,2,1,Bauer u. Landwirt | Pferdehändler,Viehhandlung,0.990,Abkürzung,,,wilhelmkoetter|,wilhkoetter|
+Brunnengasse 10,Theodor Schwarz,Theod. Schwarz,1,1,Handelsvertreter,Schaufenstergestalter,0.990,Abkürzung,,,theodorschwarz|,theodschwarz|
+Büchel 13,Herm. Altena,Hermann Altena,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.990,Abkürzung,,,hermaltena|,hermannaltena|
+Büchel 34a,Friedrich Schröer,Friedr. Schröer,2,1,Klempner und Installationsgeschäft | Schlosserei,Autogenetische- u. Elektroschweißerei,0.990,Abkürzung,,,friedrichschroeer|,friedrschroeer|
+Büchelstraße 20,Wilhelm Kückelhaus,Wilh. Kückelhaus,1,1,Haushaltungsgegenständefabrik u. Handlung,"Eisen-, Stahl-, Metallwaren- u. Werkzeughandlung",0.990,Abkürzung,,,wilhelmkueckelhaus|,wilhkueckelhaus|
+Büchelstraße 48,Wilhelm Schäfer Wwe.,Wilh. Schäfer Wwe.,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,wilhelmschaeferwitwe|,wilhschaeferwitwe|
+Büchelstraße 9,Karl Aug. Kottmann,Karl August Kottmann,1,1,Uhrmacher u. Uhrwarenhandlung,Gold- u. Silberschmiede,0.990,Abkürzung,,,karlaugkottmann|,karlaugustkottmann|
+Carl-Friedrichs-Straße 18,Hermann Wittlich,Herm. Wittlich,1,1,"""Zum Ritter""",Gast- u. Schankwirtschaft,0.990,Abkürzung,,,hermannwittlich|,hermwittlich|
+Christianstraße 17,Gustav Weisemann,Gust. Weisemann,1,1,Werkzeugfabrik,Bohrerfabrik,0.990,Abkürzung,,,gustavweisemann|,gustweisemann|
+Daniel Schürmann-Straße 3,C. Albert Windgassen,C. Alb. Windgassen,1,1,Wind-Gas-Ofenbau,Schlosserei,0.990,Abkürzung,,,calbertwindgassen|,calbwindgassen|
+Daniel-Schürmann-Straße 29,Wilhelm Kreß,Wilh. Kreß,2,1,Klempner und Installationsgeschäft | Zentralheizungs-Bauanstalt,Sanitäre Anlagen,0.990,Abkürzung,,,wilhelmkress|,wilhkress|
+Ehringhausen 71,Friedr. Wilh. Pütz,Friedr. W. Pütz,1,1,Fuhrgeschäft,Bauer und Landwirt,0.990,Abkürzung,,,friedrwilhpuetz|,friedrwpuetz|
+Elberfelderstraße 100,Heinr. Büchel,Heinrich Büchel,2,3,Autovermietungen | Lastkraftwagen- und Omnibusbetrieb,Autotransporte | Fuhrgeschäft | Taxe (Auto),0.990,Abkürzung,,,heinrbuechel|,heinrichbuechel|
+Elberfelderstraße 11,Aug. Gottwald,August Gottwald,1,2,Dekorationsgeschäft,Spezial.: Möbel u. Innenausbau,0.990,Abkürzung,,,auggottwald|,augustgottwald|
+Elberfelderstraße 112,Alfred Weddigen Nachf.,Alfr. Weddigen Nachf.,1,1,Werkzeugfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik",0.990,Abkürzung,,,alfredweddigennachf|,alfrweddigennachf|
+Elberfelderstraße 62,Robert Gerz Frau,Rob. Gerz Frau,1,1,Lastkraftwagen- und Omnibusbetrieb,Faßbinderei u. Kistenfabrik,0.990,Abkürzung,,,robertgerzfrau|,robgerzfrau|
+Elberfelderstraße 69,Wilhelm Henkel Wwe.,Wilh. Henkel Wwe.,1,1,Zuckerwarenhandlung,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.990,Abkürzung,,,wilhelmhenkelwitwe|,wilhhenkelwitwe|
+Elberfelderstraße 8,Walter Sieberth,Walt. Sieberth,5,1,"Galanterie-, Leder- u. Kurzwarenhandlung | Haushaltungsgegenständefabrik u. Handlung | Korb- u. Stuhlmacher sowie Korbwarenhandlung | Spielwarenhandlung | Waffenhandlung","Eisen-, Stahl-, Metallwaren- u. Werkzeughandlung",0.990,Abkürzung,,,waltersieberth|,waltsieberth|
+Emilienstraße 10,E. Mebus,Emil Mebus,1,1,Industriebedarf,Tankstelle,0.990,Abkürzung,,,emebus|,emilmebus|
+Emilienstraße 10,Eleonore Mebus,E. Mebus,1,1,Tankstelle,Industriebedarf,0.990,Abkürzung,,,eleonoremebus|,emebus|
+Falkenbergerstraße 16,Hermann Birkenstock Wwe.,Herm. Birkenstock Ww.,1,1,"Papier-, Zeichen-, Packmaterialienhandlung","Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.990,Abkürzung,,,hermannbirkenstockwitwe|,hermbirkenstockwitwe|
+Farrenbracken 1,Heinrich Illian,Heinr. Illian,1,1,Bauer und Landwirt,Molkereiprodukte- u. Milchhandlung (Verteiler),0.990,Abkürzung,,,heinrichillian|,heinrillian|
+Farrenbracken 5,Aug. Klüsener,August Klüsener,1,1,Molkereiprodukte- u. Milchhandlung (Verteiler),Bauer und Landwirt,0.990,Abkürzung,,,augkluesener|,augustkluesener|
+Fischerstraße 23,Friedrich Wilh. Küpper,Friedr. Wilh. Küpper,1,1,Werkzeugfabrik,Bohrerfabrik,0.990,Abkürzung,,,friedrichwilhkuepper|,friedrwilhkuepper|
+Freiheitstraße 125,Heinrich Schäfer,Heinr. Schäfer,2,2,Kraftfahrschule | Kraftfahrzeug-Reparaturwerkstätte,Gummi- u. Guttaperchawarenhandlung | Kraftfahrzeug-Vertrieb,0.990,Abkürzung,,,heinrichschaefer|,heinrschaefer|
+Freiheitstraße 154,C. Alb. Berster,C. Albert Berster,1,1,Industrieöfen,Maschinenhändler u. Agenten,0.990,Abkürzung,,,calbberster|,calbertberster|
+Freiheitstraße 187,Arthur Jutger,Art. Jutger,4,1,Kraftfahrzeugzubehörteile- u. Bedarfsartikelhandlung | Maschinenhändler u. Agenten | Rostverhütungsmittel | Salzniederlage,Gummi- u. Guttaperchawarenhandlung,0.990,Abkürzung,,,arthurjutger|,artjutger|
+Freiheitstraße 54,Walter Henning,Walt. Henning,2,1,Beerdigungsinstitut | Schreinerei,Bauschreinerei,0.990,Abkürzung,,,walterhenning|,walthenning|
+Freiheitstraße 90,Hermann Metzmacher,Herm. Metzmacher,1,1,Möbelhandlung,Schreinerei,0.990,Abkürzung,,,hermannmetzmacher|,hermmetzmacher|
+Gerstau 4,Johann Garweg,Joh. Garweg,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.990,Abkürzung,,,johanngarweg|,johgarweg|
+Großberghausen 6,Wilhelm Rögels d. J.,Wilh. Rögels,1,1,"Mehl-, Frucht- u. Futtermittelhandlung",Autovermietungen,0.990,Abkürzung,,,wilhelmroegels|j,wilhroegels|
+Großberghausen 6,Wilhelm Rögels d. Ä.,Wilh. Rögels,1,1,Pferdehändler,Autovermietungen,0.990,Abkürzung,,,wilhelmroegels|ä,wilhroegels|
+Gründerhammer 4,Friedr. Halbach,Friedrich Halbach,1,2,Gast- u. Schankwirtschaft,Werkzeugfabrik | Zangenfabrik,0.990,Abkürzung,,,friedrhalbach|,friedrichhalbach|
+Haddenbach 22,Reinhard u. Emil Wieber,Reinh. u. Emil Wieber,2,2,Werkzeugfabrik,Zangenfabrik,0.990,Abkürzung,,,reinhardundemilwieber|,reinhundemilwieber|
+Haddenbach 5,Gottlieb Ullrich,Gottl. Ullrich,1,1,Fuhrgeschäft,Bauer und Landwirt,0.990,Abkürzung,,,gottliebullrich|,gottlullrich|
+Haddenbach 6,Friedrich Kühne,Friedr. Kühne,1,1,Schuhmacherei,Schuhwarenhandlung (Geschäft),0.990,Abkürzung,,,friedrichkuehne|,friedrkuehne|
+Haddenbrockerstraße 58,Josef Sander,Jos. Sander,1,1,Holzwarenfabrik,Schreinerei,0.990,Abkürzung,,,josefsander|,jossander|
+Hastenerstraße 111,Aug. Berghaus,August Berghaus,1,2,Präzisions-Maschinenwerkzeuge für Metallbearbeitung,Sägenfabrik | Werkzeugfabrik,0.990,Abkürzung,,,augberghaus|,augustberghaus|
+Hastenerstraße 37,Aug. Rüsche,August Rüsche,1,1,Wein- u. Kognakhandlung,Handelsvertreter,0.990,Abkürzung,,,augruesche|,augustruesche|
+Hastenerstraße 91,Walt. Cleffmann,Walter Cleffmann,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.990,Abkürzung,,,waltcleffmann|,waltercleffmann|
+Hindenburgstraße 31,Wilhelm Söhngen,Wilh. Söhngen d. J.,1,1,Radioanlagen u. Geschäft,Elektrotechnische Artikel,0.990,Abkürzung,,,wilhelmsoehngen|,wilhsoehngen|j
+Hindenburgstraße 31,Wilhelm Söhngen d. J.,Wilh. Söhngen d. J.,1,1,Elektrische Kraft- u. Lichtanlagen,Elektrotechnische Artikel,0.990,Abkürzung,,,wilhelmsoehngen|j,wilhsoehngen|j
+Hindenburgstraße 9,Aug. Gottwald,August Gottwald,1,3,Dekorationsgeschäft,Kunstgewerbliche Werkstätten f. Wohnungseinrichtungen u. Innenausbau | Spezial.: Möbel u. Innenausbau,0.990,Abkürzung,,,auggottwald|,augustgottwald|
+Hof Heidhof 13,Aug. Schröder,August Schröder,1,2,Siederohrdichtmaschinen-Fabrik,Maschinen- und Apparatefabrik | Werkzeugfabrik,0.990,Abkürzung,,,augschroeder|,augustschroeder|
+Hohenbirkerstraße 43,Pet. Arn. Altena,Peter Arn. Altena,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.990,Abkürzung,,,petarnaltena|,peterarnaltena|
+Holz 44,Carl Rud. Berger,Carl Rudolf Berger,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,carlrudberger|,carlrudolfberger|
+Hägener Mühle 4,Remscheider Sägen-  Ud Werkzeughaus Kuhler & Stoßberg,Remscheider Sägen- u. Werkzeughaus Kuhler & Stoßberg,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",–,0.990,ähnliche Schreibweise,,,remscheidersaegenudwerkzeughauskuhlerundstossberg|,remscheidersaegenundwerkzeughauskuhlerundstossberg|
+Hägenerstraße 19,Hermann Becker,Herm. Becker,1,3,Rollschuhfabrik,Export | Schlittschuhfabrik | Werkzeugfabrik,0.990,Abkürzung,,,hermannbecker|,hermbecker|
+Industriestraße 8,Josef Körfer,Jos. Körfer,1,1,Fuhrgeschäft,"Kohlen-, Koks- u. Brennholzhandlung",0.990,Abkürzung,,,josefkoerfer|,joskoerfer|
+Intzestraße 134a,Edd. Streppel Wwe.,Ed. Streppel Wwe.,1,1,Bauer und Landwirt,Molkereiprodukte u. Milchhandlung (Verteiler),0.990,Abkürzung,,,eddstreppelwitwe|,edstreppelwitwe|
+Intzestraße 40,Wilhelm Mertens,Wilh. Mertens,1,1,Bauklempnerei,Bedachungsgeschäft,0.990,Abkürzung,,,wilhelmmertens|,wilhmertens|
+Jahnstraße 17,Art. Dürholt,Artur Dürholt,1,1,Werkzeugfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik",0.990,Abkürzung,,,artduerholt|,arturduerholt|
+Johanniterstraße 1,Gottlieb Maritsch,Gottl. Maritsch,1,1,Konditorei,Zuckerwarenhandlung,0.990,Abkürzung,,,gottliebmaritsch|,gottlmaritsch|
+Johanniterstraße 20,Reinhard Heumann,Reinh. Heumann d. Ä.,1,1,Sarglager,Beerdigungsinstitut,0.990,Abkürzung,,,reinhardheumann|,reinhheumann|ä
+Kippdorfstraße 24c,Alexanderwerk A. v. d. Nahmer A.-G.,Alexanderwerk A. von der Nahmer A.-G.,5,1,"Aktien-Gesellschaft | Eisen- u. Metallgießerei | Eisen-Stahlgießerei | Emaillierwerk | Gelb-, Aluminiumgießerei u. Messingwarenfabrik",Armaturenfabrik,0.990,Abkürzung,,,alexanderwerkavdnahmer|,alexanderwerkavondernahmer|
+Kirchhofstraße 7,Friedrich Schüler,Friedr. Schüler,1,1,Blumenhandlung,Gärtnerei u. Landschaftsgärtnerei,0.990,Abkürzung,,,friedrichschueler|,friedrschueler|
+Klausen 22,Richard Blombach,Rich. Blombach,1,1,Werkzeuge,Feilen- u. Raspenfabrik,0.990,Abkürzung,,,richardblombach|,richblombach|
+Kreuzbergstraße 23,H. Robert Müller,H. Rob. Müller,1,2,Schloß- u. Schlüsselfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge- (Kluppen) u. Schraubenschlüsselfabrik | Werkzeuge",0.990,Abkürzung,,,hrobertmueller|,hrobmueller|
+Kölner Straße 108,Wilhelm Növermann,Wilh. Növermann,1,1,"Kohlen-, Koks- u. Brennholzhandlung",Althandlung,0.990,Abkürzung,,,wilhelmnoevermann|,wilhnoevermann|
+Kölner Straße 115,Heinrich Schmidt,Heinr. Schmidt,1,1,"Drogen-, Chemikalien-, Farbwarenhandlung",Tapeten- u. Linoleumhandlung,0.990,Abkürzung,,,heinrichschmidt|,heinrschmidt|
+Kölner Straße 26,Wilhelm Schmidt,Wilh. Schmidt,2,1,"Fischhandlung | Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Bier-Großhandlung u. Verleger in Faß- u. Flaschenbier,0.990,Abkürzung,,,wilhelmschmidt|,wilhschmidt|
+Kölner Straße 34,Wilhelm Michels,Wilh. Michels,1,1,Gast- u. Schankwirtschaft,Lichtspieltheater,0.990,Abkürzung,,,wilhelmmichels|,wilhmichels|
+Kölnerstraße 17,Friedrich Saueressig,Friedr. Saueressig,1,1,Schreinerei,Sarglager,0.990,Abkürzung,,,friedrichsaueressig|,friedrsaueressig|
+Kölnerstraße 26a,Heinrich Sahm & Söhne,Heinr. Sahm & Söhne,2,2,"Kraftfahrzeugzubehörteile- u. Bedarfsartikelhandlung | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Export | Werkzeugfabrik,0.990,Abkürzung,,,heinrichsahmundsohn|,heinrsahmundsohn|
+Kölnerstraße 72,Hermann Engels,Herm. Engels,1,1,Kaffeewirtschaft,Konditorei,0.990,Abkürzung,,,hermannengels|,hermengels|
+Königstraße 159,Bergische Stahl-,Berg. Stahl-,1,1,Walz- und Hammerwerke,Walz- u. Hammerwerke Julius Lindenberg,0.990,Abkürzung,,,bergischestahl|,bergstahl|
+Königstraße 2,Robert Röhrig,Rob. Röhrig,2,2,"Galanterie-, Leder- u. Kurzwarenhandlung | Haushaltungsgegenständefabrik u. Handlung","Eisen-, Stahl-, Metallwaren- u. Werkzeughandlung | Herd-, Ofen-, Wasch- und Wringmaschinenhandlung",0.990,Abkürzung,,,robertroehrig|,robroehrig|
+Lenneperstraße 24,Bernhard Spiegeler,Bernh. Spiegeler,1,1,Bauschreinerei,Schreinerei,0.990,Abkürzung,,,bernhardspiegeler|,bernhspiegeler|
+Lenneperstraße 53,Wilhelm Huckenbeck,Wilh. Huckenbeck,1,1,Metzgerei,Großmetzgerei u. Wurstfabrik,0.990,Abkürzung,,,wilhelmhuckenbeck|,wilhhuckenbeck|
+Lindenhofstraße 1,Richard Wirwahn,Rich. Wirwahn,1,1,Bauschreinerei,Schreinerei,0.990,Abkürzung,,,richardwirwahn|,richwirwahn|
+Lohengrinstraße 19,Hermann Wagner,Herm. Wagner,1,1,Elektrische Kraft- u. Lichtanlagen,Elektrotechnische Artikel,0.990,Abkürzung,,,hermannwagner|,hermwagner|
+Luisenstraße 9b,Emil Stuhlfatz,E. Stuhlfatz,1,1,"Mineral-, Selterswasser-, Limonadenfabrik u. Handlung",Destillationen u. Likörfabrik,0.990,Abkürzung,,,emilstuhlfatz|,estuhlfatz|
+Lüttringhauserstraße 157,Ferd. Halbach,Ferdinand Halbach,1,1,Konditorei,Bäckerei,0.990,Abkürzung,,,ferdhalbach|,ferdinandhalbach|
+Markt 11,Friedrich Kluthe,Friedr. Kluthe,1,2,"Eisen-, Stahl-, Metallwaren- u. Werkzeughandlung",Waffenhandlung | Zigarren- u. Tabakgeschäft,0.990,Abkürzung,,,friedrichkluthe|,friedrkluthe|
+Martin Luther-Straße 40,Alb. Becker,Albert Becker,1,1,Bauunternehmung,Technisches Baubüro Mit Bauausführung,0.990,Abkürzung,,,albbecker|,albertbecker|
+Martin Luther-Straße 52,Walt. Bernhardt,W. Bernhardt,1,2,Büroeinrichtungen u. Bedarfsartikel,Schreib- u. Büromaschinen-Reparaturwerkstätte | Schreibmaschinenhandlung,0.990,Abkürzung,,,waltbernhardt|,wbernhardt|
+Martinstraße 2,Friedrich Neuhaus,Friedr. Neuhaus,1,1,"Kohlen-, Koks- u. Brennholzhandlung","Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.990,Abkürzung,,,friedrichneuhaus|,friedrneuhaus|
+Morsbach 29,Jul. Brinkmann,Julius Brinkmann,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,julbrinkmann|,juliusbrinkmann|
+Morsbach 29b,Robert Pommerenke d. J.,Rob. Pommerenke d. J.,1,1,"Obst-, Konserven- und Gemüsehandlung","Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.990,Abkürzung,,,robertpommerenke|j,robpommerenke|j
+Morsbach 42,Walter Koll,W. Koll d. J.,1,2,Mechaniker,Schreib- u. Büromaschinen-Reparaturwerkstätte | Schreibmaschinenhandlung,0.990,Abkürzung,,,walterkoll|,wkoll|j
+Morsbach 42,Walter Koll d. J.,W. Koll d. J.,1,2,Kraftfahrzeug-Reparaturwerkstätte,Schreib- u. Büromaschinen-Reparaturwerkstätte | Schreibmaschinenhandlung,0.990,Abkürzung,,,walterkoll|j,wkoll|j
+Mozartstraße 16,Wilhelm Tiggemann,Wilh. Tiggemann,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung","Drogen-, Chemikalien-, Farbwarenhandlung",0.990,Abkürzung,,,wilhelmtiggemann|,wilhtiggemann|
+Neuenkamperstraße 1,Joh. Pet. Becker junr.,Joh. Peter Becker junr. A.-G.,1,1,Schlittschuhfabrik,Export,0.990,Abkürzung,,,johpetbeckerjunr|,johpeterbeckerjunr|
+Neuplatz 1b,J. Wilhelm Kuhlen,J. Wilh. Kuhlen,1,1,Werkzeugfabrik,Grob- u. Kleinschmiederei,0.990,Abkürzung,,,jwilhelmkuhlen|,jwilhkuhlen|
+Neustraße 13,Wilhelm Feldermann,Wilh. Feldermann,1,1,Bau- u. Kunstschlosserei,Ofenschlosserei,0.990,Abkürzung,,,wilhelmfeldermann|,wilhfeldermann|
+Nordstraße 102,Robert Motte,Rob. Motte,1,2,Klischeeanstalt,Gummi- u. Stahlstempelfabrik | Klischee-  u. Stempelfabrik,0.990,Abkürzung,,,robertmotte|,robmotte|
+Obergarschagen 17,Wilhelm Kotthaus,Wilh. Kotthaus,1,1,Bauer und Landwirt,Kaffeehandlung,0.990,Abkürzung,,,wilhelmkotthaus|,wilhkotthaus|
+Oberhützerstraße 14,Friedrich Wilh. Selve,Friedr. Wilh. Selve,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,friedrichwilhselve|,friedrwilhselve|
+Oberhützerstraße 35,Rob. Beitzer d. J.,Robert Beitzer,1,2,Elektrische Kraft- u. Lichtanlagen,Bohrerfabrik | Werkzeugfabrik,0.990,Abkürzung,,,robbeitzer|j,robertbeitzer|
+Oberreinshagen 9,Reinhard Fleischmann,Reinh. Fleischmann,2,1,"Feilen- u. Raspenfabrik | Feilen-, Sägen- und Werkzeugfabrik","Feilen-, Sägen- und Werkzeugfabrik",0.990,Abkürzung,,,reinhardfleischmann|,reinhfleischmann|
+Osterbusch 40,Joh. Peter Spelsberg,Joh. Pet. Spelsberg,2,1,Hämmerfabrik | Werkzeugfabrik,Gesenk- und Faconschmiederei,0.990,Abkürzung,,,johpeterspelsberg|,johpetspelsberg|
+Papenbergerstraße 32,Pet. Albert Groote,Pet. Alb. Groote,3,1,Remscheider Leder-Treibriemenfabrik | Remscheider Ledertreibriemenfabrik,Remscheider Lederriemenfabrik,0.990,Abkürzung,,,petalbertgroote|,petalbgroote|
+Papenbergerstraße 38,Bergische Stahl-Industrie,Berg. Stahl-Industrie,1,1,Wagenmaterial für Kleinbahnen u. elektr. Bahnen usw.,Eisen- u. Metallgießerei,0.990,Abkürzung,,,bergischestahlindustrie|,bergstahlindustrie|
+Pastoratstraße 5,Aug. Lothringer Wwe.,August Lothringer Wwe.,1,1,Fischhandlung,Bier-Großhandlung u. Verleger in Faß- u. Flaschenbier,0.990,Abkürzung,,,auglothringerwitwe|,augustlothringerwitwe|
+Paulusstraße 1a,Aug. Peters,August Peters,1,1,Xylograph (Graphisches Gewerbe),Klischeeanstalt,0.990,Abkürzung,,,augpeters|,augustpeters|
+Paulusstraße 5,Herm. Ahrend,Hermann Ahrend,1,1,Bauklempnerei,Bedachungsgeschäft,0.990,Abkürzung,,,hermahrend|,hermannahrend|
+Platz 15,Werner Aug. Kürschner,Werner August Kürschner,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.990,Abkürzung,,,werneraugkuerschner|,werneraugustkuerschner|
+Platz 5,Aug. Rottsieper,August Rottsieper d. J.,1,1,Werkzeugfabrik,Stahl- u. Hammerwerk,0.990,Abkürzung,,,augrottsieper|,augustrottsieper|j
+Reinshagenerstraße 100,Gustav v. d. Mühlen,Gustav von der Mühlen,1,1,Verlagsvertreter,Handelsvertreter,0.990,Abkürzung,,,gustavvdmuehlen|,gustavvondermuehlen|
+Reinshagenerstraße 54,Heinrich Wiesemann d. J.,Heinr. Wiesemann d. J.,1,1,Werkzeugfabrik,Bohrerfabrik,0.990,Abkürzung,,,heinrichwiesemann|j,heinrwiesemann|j
+Remscheiderstraße 24,Fr. Alb. Börner,Friedrich Albert Börner,3,1,Autovermietung | Bohrerfabrik (Böhrer f. Holz- u. Bauhandwerk) | Werkzeuge,Kraftfahrschule,0.990,Abkürzung,,,fralbboerner|,friedrichalbertboerner|
+Ringelstraße 36,Wilhelm Weller,Wilh. Weller,1,1,Radioanlagen- u. Geschäft,Elektrische Kraft- u. Lichtanlagen (Installation),0.990,Abkürzung,,,wilhelmweller|,wilhweller|
+Rosenhügelerstraße 12,Albert Herm. Altena,Alb. Herm. Altena,1,1,Grob- u. Kleinschmiederei,Feilen- u. Raspenfabrik,0.990,Abkürzung,,,alberthermaltena|,albhermaltena|
+Rosenhügelerstraße 35,Heinrich Kleinschmidt,Heinr. Kleinschmidt,2,2,Kraftfahrzeug-Reparaturwerkstätte | Taxe (Auto),Autotransporte | Autovermietungen,0.990,Abkürzung,,,heinrichkleinschmidt|,heinrkleinschmidt|
+Rosenhügelerstraße 58,Edm. Drögemeyer,Edmund Drögemeyer,1,2,Werkzeugfabrik,Metallsägenfabrik | Präzisions-Maschinenwerkzeuge für Metallbearbeitung,0.990,Abkürzung,,,edmdroegemeyer|,edmunddroegemeyer|
+Rosenhügelerstraße 64,Pet. Oswald u. Gustav Schäfer,Pet. Osw. & Gust. Schäfer,1,2,Werkzeugfabrik,Automobilwerkzeugfabriken und Handlungen,0.990,Abkürzung,,,petoswaldundgustavschaefer|,petoswundgustschaefer|
+Salemstraße 39,Heinr. Erlinghäuser,Heinrich Erlinghäuser,1,1,Maurer,Ofenbauer,0.990,Abkürzung,,,heinrerlinghaeuser|,heinricherlinghaeuser|
+Sandkuhlstraße 13,Richard Müller d. J.,Rich. Müller d. J.,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,richardmueller|j,richmueller|j
+Scheiderstraße 11,Hermann Frettlöhr d. J.,Herm. Frettlöhr,1,2,Herrengeschäft,Parfümerie- u. Seifenhandlung | Zigarren- u. Tabakgeschäft,0.990,Abkürzung,,,hermannfrettloehr|j,hermfrettloehr|
+Scheiderstraße 13,Wilhelm Kesting d. J.,Wilh. Kesting,1,2,Möbelhandlung,Bauschreinerei | Schreinerei,0.990,Abkürzung,,,wilhelmkesting|j,wilhkesting|
+Scheiderstraße 13,Wilhelm Kesting d. J.,Wilh. Kesting d. J.,1,1,Möbelhandlung,Lastkraftwagen- und Omnibusbetrieb,0.990,Abkürzung,,,wilhelmkesting|j,wilhkesting|j
+Schützenstraße 1,Gustav Ernst Tillmanns,Gust. Ernst Tillmanns,1,1,Werkzeugfabrik,Handelsvertreter,0.990,Abkürzung,,,gustavernsttillmanns|,gusternsttillmanns|
+Schützenstraße 39,Gottlieb Oeckinghaus,Gottl. Oeckinghaus,1,1,Zentralheizungs-Bauanstalt,Klempner und Installationsgeschäft,0.990,Abkürzung,,,gottlieboeckinghaus|,gottloeckinghaus|
+Solingerstraße 55,H. Angersbach,Heinr. Angersbach,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Gast- u. Schankwirtschaft,0.990,Abkürzung,,,hangersbach|,heinrangersbach|
+Stachelhauserstraße 1,Jos. Brüssermann,Josef Brüssermann,3,1,"Fischhandlung | Kleinhandlung mit Spirituosen | Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Feinkostgeschäft,0.990,Abkürzung,,,josbruessermann|,josefbruessermann|
+Steinbergerstraße 5,Eugen Spriestersbach,Eug. Spriestersbach,1,1,Bohrerfabrik,Werkzeugfabrik,0.990,Abkürzung,,,eugenspriestersbach|,eugspriestersbach|
+Stockderstraße 24,Alb. Ackermann J. P. Sohn,Albert Ackermann J. P. Sohn,1,2,Metallsägenfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen | Werkzeugfabrik",0.990,Abkürzung,,,albackermannjpsohn|,albertackermannjpsohn|
+Struck 17,Julius Voß,Jul. Voß,1,1,Werkzeugfabrik,Feilen- u. Raspenfabrik,0.990,Abkürzung,,,juliusvoss|,julvoss|
+Tyrolerstraße 22,Albert Sülberg,Alb. Sülberg,1,1,Werkzeugfabrik,Gesenk- und Faconschmiederei,0.990,Abkürzung,,,albertsuelberg|,albsuelberg|
+Ueberfelderstraße 21,Friedrich Warweg d. J.,Friedr. Warweg d. J.,1,1,Elektrische Kraft- u. Lichtanlagen,Elektrotechnische Artikel,0.990,Abkürzung,,,friedrichwarweg|j,friedrwarweg|j
+Unterhölterfelderstraße 28,Gustav Schleutermann,Gust. Schleutermann,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,gustavschleutermann|,gustschleutermann|
+Unterhölterfelderstraße 52,Alb. Rud. Müller,Alb. Rudolf Müller,1,1,Präzisions-Maschinenwerkzeuge für Metallbearbeitung,Werkzeugfabrik,0.990,Abkürzung,,,albrudmueller|,albrudolfmueller|
+Untertalstraße 13,Richard Hackenberg,Rich. Hackenberg,1,1,Handelsvertreter,Gravieranstalt,0.990,Abkürzung,,,richardhackenberg|,richhackenberg|
+Vereinsstraße 13,Walter Sieper,Walt. Sieper,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.990,Abkürzung,,,waltersieper|,waltsieper|
+Vereinsstraße 18,Hermann Michel,Herm. Michel d. Ä.,2,1,Holzschlittschuhfabrik | Holzwarenfabrik,Schreinerei,0.990,Abkürzung,,,hermannmichel|,hermmichel|ä
+Vieringhausen 3,Hermann Metzmacher d. J.,Herm. Metzmacher d. J.,1,1,Beerdigungsinstitut,Schreinerei,0.990,Abkürzung,,,hermannmetzmacher|j,hermmetzmacher|j
+Vieringhausen 31,Bernhard Meis,Bernh. Meis,1,1,"Sattler-, Polsterer- und Polsterwaren",Riemenfabrik,0.990,Abkürzung,,,bernhardmeis|,bernhmeis|
+Vieringhausen 62,Walt. Büddicker,Walter Büddicker,1,1,Werkzeugfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik",0.990,Abkürzung,,,waltbueddicker|,walterbueddicker|
+Vieringhausen 92,Fr. Ed. Engels & Co.,Fr. Eduard Engels & Co.,1,3,Export,"Bohrerfabrik | Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik | Werkzeugfabrik",0.990,Abkürzung,,,fredengels|,freduardengels|
+Wernerstraße 8,Hermann Bergerhoff,Herm. Bergerhoff,1,1,Werkzeuge,Maschinenhändler u. Agent,0.990,Abkürzung,,,hermannbergerhoff|,hermbergerhoff|
+Westen 9,Wilhelm vom Schemm,Wilh. vom Schemm,1,1,Winden- u. Hebezeugefabrik,Werkzeuge,0.990,Abkürzung,,,wilhelmvomschemm|,wilhvomschemm|
+Lenhartzhammer 6,Vereinigte Steinsägefabriken,Vereinigte Steinsägenfabriken G. m. b. H.,1,1,–,–,0.982,ähnliche Schreibweise,,,vereinigtesteinsaegefabriken|,vereinigtesteinsaegenfabriken|
+Berghausen 17,Eschachtaler Feilenfabrik,Eschbachtaler Feilenfabrik,1,1,J. W. Falkenrath & Co.,J. W. Falkenrath & Co.,0.980,ähnliche Schreibweise,,,eschachtalerfeilenfabrik|,eschbachtalerfeilenfabrik|
+Berghausen 17,Gottlieb Alkenrath Wwe.,Gottlieb Falkenrath Wwe.,1,1,Gast- u. Schankwirtschaft,Bauer und Landwirt,0.978,ähnliche Schreibweise,,,gottliebalkenrathwitwe|,gottliebfalkenrathwitwe|
+Hindenburgstraße 37,Reinmöller & Pihlhoff,Reinmölller u. Pihlhoff,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.978,ähnliche Schreibweise,,,reinmoellerundpihlhoff|,reinmoelllerundpihlhoff|
+Berghauserstraße 62,W. Ferd. Klingelnberg Söhne,W. Ferd. Klingelnsberg Söhne,2,1,"Präzisions-Maschinenwerkzeuge für Metallbearbeitung | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.977,ähnliche Schreibweise,,,wferdklingelnbergsohn|,wferdklingelnsbergsohn|
+Theodorstraße 18,Niebch & Wirminghaus,Niebsch & Wirminghaus,1,1,Werkzeugfabrik,Feilen- u. Raspenfabrik,0.976,ähnliche Schreibweise,,,niebchundwirminghaus|,niebschundwirminghaus|
+Bornerstraße 17,Hermann Mühlinghaus,Hermann Mühlingshaus,1,1,"Mehl-, Frucht- u. Futtermittelhandlung",Bauer u. Landwirt,0.974,ähnliche Schreibweise,,,hermannmuehlinghaus|,hermannmuehlingshaus|
+Baisieperstraße 19,Ewald Scharwächter,Ewald Schwarwächter,1,1,Lebensmittelgroßhandlung,"Schokoladen-, Zuckerwarenfabrik u. Großhandlung",0.973,ähnliche Schreibweise,,,ewaldscharwaechter|,ewaldschwarwaechter|
+Oberhölterfelderstraße 3,Robert Hönneknövel d. J.,Robert Hönnekövel d. J.,1,1,Zigarren- u. Tabakgeschäft,Parfümerie- u. Seifenhandlung,0.973,ähnliche Schreibweise,,,roberthoenneknoevel|j,roberthoennekoevel|j
+Gertenbachstraße 2,Geschwister Starcke,Geschwister Starke,1,1,Aussteuer- und Wäscheausstattungsgeschäft,Manufaktur- u. Tuchhandlung,0.971,ähnliche Schreibweise,,,geschwisterstarcke|,geschwisterstarke|
+Haddenbach 43,Gesellschaft für Werkzeug-Industrie G.m.b.H. Rd.,Gesellschaft für Werkzeugindustrie G.m.b.H.,1,5,Auto- u. Waggonbeschlagfabriken u. Handlungen,"Blechscherenfabrik | Export | Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik | Zangenfabrik | –",0.971,ähnliche Schreibweise,,,gesellschaftfuerwerkzeugindustrierd|,gesellschaftfuerwerkzeugindustrie|
+Nordstraße 158,Paul Hönneknövel,Paul W. Hönneknövel,1,1,Patent- u. Civilingenieur,Ingenieurbüro,0.971,ähnliche Schreibweise,,,paulhoenneknoevel|,paulwhoenneknoevel|
+Vieringhausen 110a,Emaillierwerk Krumm,Emallierwerk Krumm,1,1,Armaturenfabrik,Emaillierwerk,0.971,ähnliche Schreibweise,,,emaillierwerkkrumm|,emallierwerkkrumm|
+Bismarckstraße 90,Mendicka u. Mannß,Mendika u. Mannß,1,1,Schilder- u. Reklamemaler,Anstreicher- u. Malergeschäft,0.970,ähnliche Schreibweise,,,mendickaundmannss|,mendikaundmannss|
+Elberfelderstraße 58,Friedrich Schwartz,Friedrich Schwarz,1,1,Möbelhandlung,"Sattler-, Polsterer- und Polsterwaren",0.970,ähnliche Schreibweise,,,friedrichschwartz|,friedrichschwarz|
+Hindenburgstraße 44,Ernst Elbertzhagen,Ernst Elberzhagen,3,1,Aussteuer- u. Wäscheausstattungsgeschäft | Manufaktur- u. Tuchhandlung | Textilwarengeschäft,"Hut-, Handschuhe-, Krawatten-, Mützen-, Schirme-, Stöcke-, Herrenwäsche-, Herrenartikel-Handlung",0.970,ähnliche Schreibweise,,,ernstelbertzhagen|,ernstelberzhagen|
+Hügelstraße 28,Grau & Schwanicke,Grau & Schwanike,2,1,Eisenkonstruktionen | Schlosserei,Wellblechfabrik u. Eisenkonstruktionen,0.970,ähnliche Schreibweise,,,grauundschwanicke|,grauundschwanike|
+Neustraße 19,Gustav Ritterhaus,Gustav Rittershaus,1,2,Export,Bohrerfabrik | Werkzeugfabrik,0.970,ähnliche Schreibweise,,,gustavritterhaus|,gustavrittershaus|
+Büchelstraße 55,Eernst August Werk,Ernst-August-Werk,1,3,Schweflinghaus u. Beitzer,Schweflinghaus & Beitzer,0.968,ähnliche Schreibweise,,,eernstaugustwerk|,ernstaugustwerk|
+Clarenbach 10,Carl Ullrich Wwe.,Carl Ulrich Wwe.,1,1,Bauer und Landwirt,Fuhrgschäft,0.968,ähnliche Schreibweise,,,carlullrichwitwe|,carlulrichwitwe|
+Ehringhausen 22,Moritz Strasmann,Moritz Straßmann,1,2,Gast- u. Schankwirtschaft,Beitel- u. Hobeleisenfabrik | Werkzeugfabrik,0.968,ähnliche Schreibweise,,,moritzstrasmann|,moritzstrassmann|
+Elbersstraße 1,Scharff & Krauß,Scharff u. Kraus,1,1,Buch- u. Steindruckerei,Druckerei Lüttringhauser Anzeiger,0.968,ähnliche Schreibweise,,,scharffundkrauss|,scharffundkraus|
+Freiherr vom Stein-Straße 15b,Stahlwerk Westig,Stahlwerk Westing,1,1,Unna i./Westf.,Unna i. Westf.,0.968,ähnliche Schreibweise,,,stahlwerkwestig|,stahlwerkwesting|
+Fürbergerstraße 30,Carl August Tesche,Carl August Tesch,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.968,ähnliche Schreibweise,,,carlaugusttesche|,carlaugusttesch|
+Oelmühle 10,Hermann Geerligs,Hermann Geerlings,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Geflügelfarm,0.968,ähnliche Schreibweise,,,hermanngeerligs|,hermanngeerlings|
+Alleestraße 82,Albert Boedecker,Albert Boedeker,1,1,Kaufm. Privatschule,Treuhandgesellschaft u. Bücherrevisor,0.966,ähnliche Schreibweise,,,albertboedecker|,albertboedeker|
+Bismarckstraße 60,Theod. Rutenbeck,Theod. Ruthenbeck,1,1,Elektrotechnische Artikel,Elektrische Kraft- u. Lichtanlagen,0.966,ähnliche Schreibweise,,,theodrutenbeck|,theodruthenbeck|
+Christianstraße 36a,Heinrich Ullrich,Heinrich Ulrich d. Ä.,1,1,Fuhrgeschäft,Güterfernverkehr,0.966,Generationszusatz nur bei einem,,,heinrichullrich|,heinrichulrich|ä
+Hindenburgstraße 18,Ferdinand Flüß,Ferdinand Flüs,1,1,Werkzeugfabrik,verstellbare Windeisen,0.966,ähnliche Schreibweise,,,ferdinandfluess|,ferdinandflues|
+Jägerhaus 2,Emil Hoseur Wwe.,Emil Hoseu Wwe.,1,1,Gast- u. Schankwirtschaft,"Kohlen-, Koks- u. Brennholzhandlung",0.966,ähnliche Schreibweise,,,emilhoseurwitwe|,emilhoseuwitwe|
+Kölnerstraße 63c,Gebr. Flüß,Gebr. Flüs,2,1,Gesenk- und Faconschmiederei | Werkzeugfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik",0.966,ähnliche Schreibweise,,,gebruederfluess|,gebruederflues|
+Nordstraße 118,Robert Gerhards d. Ä.,Robert Gerhardts,1,1,Damen- und Herrengeschäft,Zigarren- u. Tabakgeschäft,0.966,Generationszusatz nur bei einem,,,robertgerhards|ä,robertgerhardts|
+Rosenhügelerstraße 38,Louis Benscheidt,Louis Benscheid,3,1,"Drogen-, Chemikalien-, Farbwarenhandlung | Kleinhandlung mit Spirituosen | Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung","Butter-, Käse-, Margarine-, Eierhandlung",0.966,ähnliche Schreibweise,,,louisbenscheidt|,louisbenscheid|
+Rospattstraße 19,Franz Hasselkuß,Franz Hasselkus,1,2,Maschinen-Reparaturwerkstätte,Kraftfahrzeug-Reparaturwerkstätte | Schreinerei,0.966,ähnliche Schreibweise,,,franzhasselkuss|,franzhasselkus|
+Stachelhauserstraße 31,Karl Herm. Ingens,Karl Herm. Wingens,1,1,Export,Elektrotechnische Artikel,0.966,ähnliche Schreibweise,,,karlhermingens|,karlhermwingens|
+Vieringhausen 46a,Otto Schuhmacher d. Ä.,Otto Schumacher,1,1,Güterfernverkehr,Güterbestätter,0.966,Generationszusatz nur bei einem,,,ottoschuhmacher|ä,ottoschumacher|
+Blumenstraße 49a,Theodor Driewer,Theodor Riewer,1,1,Konditorei,Kaffeewirtschaft,0.963,ähnliche Schreibweise,,,theodordriewer|,theodorriewer|
+Gartenstraße 13,Heinrich Stolze,Heinrich Stolz,1,1,Tankstelle,Kraftfahrzeugzubehörteile- und Bedarfsartikelhandlung,0.963,ähnliche Schreibweise,,,heinrichstolze|,heinrichstolz|
+Hastenerstraße 125,Walter Ahnfeldt,Walter Ahnfeld,1,1,Zigarren- u. Tabakgeschäft,"Galanterie-, Leder- u. Kurzwarenhandlung",0.963,ähnliche Schreibweise,,,walterahnfeldt|,walterahnfeld|
+Kippdorfstraße 25,Ernst Stosberg,Ernst Stoßberg,1,1,Schuhwarenhandlung (Geschäft),Schuhmacherei,0.963,ähnliche Schreibweise,,,ernststosberg|,ernststossberg|
+Kirchhofstraße 6,Ernst Heidfeld,Ernst Heidtfeld,2,1,"Grabsteingeschäft | Stein-, Bildhauerei-, Grabstein- u. Marmorgeschäft",Bildhau- u. Steinmetzgeschäft,0.963,ähnliche Schreibweise,,,ernstheidfeld|,ernstheidtfeld|
+Kölner Straße 45,Daniel Wischer,Daniel Witscher,1,1,Tapeten- u. Linoleumhandlung,"Drogen-, Chemikalien-, Farbwarenhandlung",0.963,ähnliche Schreibweise,,,danielwischer|,danielwitscher|
+Kölnerstraße 65,Gustav Henckell,Gustav Henkell,2,1,Export | Werkzeugfabrik,Holzschlittschuhfabrik,0.963,ähnliche Schreibweise,,,gustavhenckell|,gustavhenkell|
+Königstraße 100,Schmidt-Böcker,Schmidt Böker,1,1,Kraftfahrzeugzubehörteile- u. Bedarfsartikelhandlung,Wagenbau- u. Hufbeschlagartikel-Fabrik u. Handlung,0.963,ähnliche Schreibweise,,,schmidtboecker|,schmidtboeker|
+Rosenhügelerstraße 29,Ed. Gottfr. Fernde,Ed. Gottfr. Ferne,1,3,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik",Export | Fabrikation von Elektrischen Haarschneidemaschinen und Reparatur sämtlicher Modelle | Werkzeugfabrik,0.963,ähnliche Schreibweise,,,edgottfrfernde|,edgottfrferne|
+Steinweg 1,Adolf Wüsthoff,Adolf Wüsthof,1,1,Parfümerie- u. Seifenhandlung,Damen- und Herrengeschäft,0.963,ähnliche Schreibweise,,,adolfwuesthoff|,adolfwuesthof|
+Wiesenstraße 12,Heinrich Stolze,Heinrich Stolz,1,1,Tankstelle,Kraftfahrzeugzubehörteile- und Bedarfsartikelhandlung,0.963,ähnliche Schreibweise,,,heinrichstolze|,heinrichstolz|
+Alexanderstraße 37,Walter Krämer,Walter Kremer,1,1,Galvanische Anstalt,Werkzeugfabrik,0.960,ähnliche Schreibweise,,,walterkraemer|,walterkremer|
+Bahnhofspl. 16,Otto Händeler,Otto Händler,1,1,Kaffeewirtschaft,Konditorei,0.960,ähnliche Schreibweise,,,ottohaendeler|,ottohaendler|
+Bismarckstraße 46,Adam Kahlheber,Adam Kalheber,1,1,Schuhwarenhandlung (Geschäft),Schuhmacherei,0.960,ähnliche Schreibweise,,,adamkahlheber|,adamkalheber|
+Büchelstraße 3,Gustav Wagener,Gustav Wagner,1,1,"Kohlen-, Koks- u. Brennholzhandlung",Fuhrgeschäft,0.960,ähnliche Schreibweise,,,gustavwagener|,gustavwagner|
+Büchelstraße 35,Josef Büscher,Josef Buscher,1,1,Kleiderhandlung und Konfektionsgeschäft,Manufaktur- u. Tuchhandlung,0.960,ähnliche Schreibweise,,,josefbuescher|,josefbuscher|
+Elberfelderstraße 2,Luise Brünig,Luise Brüning,1,1,Handarbeitsgeschäft,Stickereigeschäft,0.960,ähnliche Schreibweise,,,luisebruenig|,luisebruening|
+Kölnerstraße 18,Peter Büscher,Peter Buscher,2,1,"Möbelhandlung | Sattler-, Polsterer- und Polsterwaren",Bettenausstattungsgeschäft,0.960,ähnliche Schreibweise,,,peterbuescher|,peterbuscher|
+Parallelstraße 10,Adolf Groote u. Gottl. Engels,Adolf Grotte u. Gottl. Engels,2,2,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.960,ähnliche Schreibweise,,,adolfgrooteundgottlengels|,adolfgrotteundgottlengels|
+Baisieperstraße 18,Karl Pfeffer,Karl Pfeiffer,1,1,Technisches Baubüro Mit Bauausführung,Bauunternehmung,0.957,ähnliche Schreibweise,,,karlpfeffer|,karlpfeiffer|
+Hammesbergerstraße 5a,Fritz Ullrich,Fritz Ulrich,1,1,Rohproduktenhandlung,Schrotthandlung,0.957,ähnliche Schreibweise,,,fritzullrich|,fritzulrich|
+Hindenburgstraße 95,Otto Pfeifer,Otto Pfeiffer,1,1,Bauklempnerei,Bedachungsgeschäft,0.957,ähnliche Schreibweise,,,ottopfeifer|,ottopfeiffer|
+Hoffmeisterstraße 2,Ernst vom Hoff,Ernst vom Hof,2,1,"Sägeangelnfabrik | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.957,ähnliche Schreibweise,,,ernstvomhoff|,ernstvomhof|
+Alleestraße 54,Karl Hückinghaus Wwe.,Karl Kückinghaus Wwe.,1,1,Uhrmacher u. Uhrwarenhandlung,Gold- u. Silberschmiede,0.952,ähnliche Schreibweise,,,karlhueckinghauswitwe|,karlkueckinghauswitwe|
+Blumenstraße 2,J. W. Tillmanns & Co.,J. W. Tillmans & Co.,1,2,"Waagen-, Gewichts- und Flüssigkeitsmaaße-Handlung und Fabrik","Eisen-, Stahl-, Metallwaren- u. Werkzeughandlung | Herd-, Ofen-, Wasch- und Wringmaschinenhandlung",0.952,ähnliche Schreibweise,,,jwtillmanns|,jwtillmans|
+Ehringhausen 6,Kurt Niebch,Kurt Niebsch,1,1,Kraftfahrzeugzubehörteile- u. Bedarfsartikelhandlung,Kraftfahrzeug-Vertrieb,0.952,ähnliche Schreibweise,,,kurtniebch|,kurtniebsch|
+Greulingstraße 42,Eugen Weber,Eugen Wieber,1,1,Feinkostgeschäft,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.952,ähnliche Schreibweise,,,eugenweber|,eugenwieber|
+Kölner Straße 57,Grete Behler,Grete Behle,1,1,Hotel,Gast- u. Schankwirtschaft,0.952,ähnliche Schreibweise,,,gretebehler|,gretebehle|
+Lessingstraße 6,Hugo Niebch,Hugo Niebsch,1,1,Werkzeugfabrik,Feilen- u. Raspenfabrik,0.952,ähnliche Schreibweise,,,hugoniebch|,hugoniebsch|
+Markt 6,Albert Bader,Albert Bade,1,1,Bandagist,"Drogen-, Chemikalien-, Farbwarenhandlung",0.952,ähnliche Schreibweise,,,albertbader|,albertbade|
+Peterstraße 45,Karl Krämer,Karl Kramer,1,1,Bauklempnerei,Bedachungsgeschäft,0.952,ähnliche Schreibweise,,,karlkraemer|,karlkramer|
+Preyersmühle,Gebrüder Wellershaus o.H.,Gebr. Wellershaus,1,1,Export,Feilenfabrik,0.952,ähnliche Schreibweise,,,gebruederwellershausoh|,gebruederwellershaus|
+Sieperstraße 43a,Ernst Wilmes,Ernst Wilms,1,1,Metallsägenfabrik,Werkzeugfabrik,0.952,ähnliche Schreibweise,,,ernstwilmes|,ernstwilms|
+Fischerstraße 21a,Oesterheld & Co.,Osterheld & Co. Kom.-Ges.,1,1,Schloß- u. Schlüsselfabrik,Feilen- u. Raspenfabrik,0.947,ähnliche Schreibweise,,,oesterheld|,osterheld|
+Fürbergerstraße 9,C. Gustav Tesche & Söhne,C. Gust Tesche & Söhne,1,1,Werkzeugfabrik,Grob- u. Kleinschmiederei,0.947,ähnliche Schreibweise,,,cgustavtescheundsohn|,cgusttescheundsohn|
+Honsbergerstraße 35,Herm. Jutger,Herm. Jutge,3,1,Samenhandlung | Viktoria Drogerie | Viktoria-Drogerie,Viktoria-Drogerie,0.947,ähnliche Schreibweise,,,hermjutger|,hermjutge|
+Luisenstraße 9b,E. Stuhlsatz,E. Tuhlsatz,1,1,Kleinhandlung mit Spirituosen,Bier-Großhandlung u. Verleger in Faß- u. Flaschenbier,0.947,ähnliche Schreibweise,,,estuhlsatz|,etuhlsatz|
+Adolfstraße 4,Rudolf Evertsbusch,Rudolf Evertzbusch,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.941,ähnliche Schreibweise,,,rudolfevertsbusch|,rudolfevertzbusch|
+Eberhardstraße  63,Arco Werkzeug u. Maschinenbau G. m. b. H.,Arco-Werkzeug- und Maschinen-G.m.b.H.,1,1,Werkzeugfabrik,Maschinen- und Apparatefabrik,0.941,ähnliche Schreibweise,,,arcowerkzeugundmaschinenbau|,arcowerkzeugundmaschinen|
+Haddenbrockerstraße 33,A. Münnig,A. Münning,1,1,Waschanstalt,"Reinigungs-, Aufbügelanstalt u. Färberei",0.941,ähnliche Schreibweise,,,amuennig|,amuenning|
+Königstraße 182,Adolf Klöppelberg,Adolf Klüppelberg,1,1,Tankstelle,Huf- und Wagenschmiede,0.941,ähnliche Schreibweise,,,adolfkloeppelberg|,adolfklueppelberg|
+Langestraße 28,Ernst Hessenbruchst,Ernst Hessenbruch,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.941,ähnliche Schreibweise,,,ernsthessenbruchst|,ernsthessenbruch|
+Oberhölterfelderstraße 40,Junior-Metallsägen C. Mesenhöller & Co.,Junior Metallsägenwerk C. Mesenhöller & Co.,1,1,Werkzeugfabrik,Metallsägenfabrik,0.939,ähnliche Schreibweise,,,juniormetallsaegencmesenhoeller|,juniormetallsaegenwerkcmesenhoeller|
+Maxstraße 10,Fritz Leihäuser d. A.,Fritz Leihäuser d. J.,1,1,Molkereiprodukte u. Milchhandlung (Verteiler),Brotniederlage u. Backwaren-Verkaufsstelle,0.938,Generationszusatz nur bei einem,,,fritzleihaeuserda|,fritzleihaeuser|j
+Gartenstraße 2b,Bergerhoff & Hagebäker,Bergerhoff & Hageböcker,1,1,Werkzeuge,"Export (Fabrikation u. Großhandel von Eisen-, Stahl-, Metallwaren und Wwerkzeugen)",0.936,ähnliche Schreibweise,,,bergerhoffundhagebaeker|,bergerhoffundhageboecker|
+Ehringhausen 81,Albert Stramann,Albert Straßmann,1,2,Präzisions-Werkzeug- u. Maschinenfabrik,Präzisions-Werkzeug- u. Maschinenfabrik,0.933,ähnliche Schreibweise,,,albertstramann|,albertstrassmann|
+Freiherr vom Stein-Straße 15a,Gustav Brüning o.H.,Gustav Brüning,1,1,Bauunternehmung,Technisches Baubüro Mit Bauausführung,0.933,ähnliche Schreibweise,,,gustavbrueningoh|,gustavbruening|
+Luisenstraße 11,F. W. Bracke,F. W. Brake,1,1,Blechscherenfabrik,Werkzeugfabrik,0.933,ähnliche Schreibweise,,,fwbracke|,fwbrake|
+Richthofenstraße 68,Hermann Stockder,Hermann Stockter,1,1,Werkzeuge,Gewindeschneidwerkzeuge,0.933,ähnliche Schreibweise,,,hermannstockder|,hermannstockter|
+Bismarckstraße 79,Wilhelm Mathner,Wilhelm Mattner,1,1,Auto- u. Wagenlackierereien,Bäckerei,0.929,ähnliche Schreibweise,,,wilhelmmathner|,wilhelmmattner|
+Fürbergerstraße 1,David Cominicus & Co. GmbH,David Dominicus,1,5,Landwirtschaftliche Maschinenersatzteile-Fabrik u. Handlung,"Export | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen | Werkzeugfabrik",0.929,ähnliche Schreibweise,,,davidcominicus|,daviddominicus|
+Rospattstraße 17,Wilhelm Liekamp,Wilhelm Linkamp,1,1,"Obst-, Konserven- u. Gemüsehandlung","Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.929,ähnliche Schreibweise,,,wilhelmliekamp|,wilhelmlinkamp|
+Schwelmerstraße 14,Anna Bartniczak,Anna Bartnoczak,1,1,"Obst-, Konserven- u. Gemüsehandlung","Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.929,ähnliche Schreibweise,,,annabartniczak|,annabartnoczak|
+Bismarckstraße 107,David Müller & Co. o.H.,David Müller & Co.,2,2,Fleischereimaschinenmesser- u. Lochscheibenfabrik | Landwirtschaftliche Maschinenersatzteile-Fabrik u. Handlung,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen | Werkzeugfabrik",0.923,ähnliche Schreibweise,,,davidmuelleroh|,davidmueller|
+Clarenbach 14,"""Feilag""","""Freilag""",3,2,Feilen aller Gewerbe,Metallsägenfabrik | Werkzeuge,0.923,ähnliche Schreibweise,,,feilag|,freilag|
+Elberfelderstraße 24,A. Lüneschloß,A. Müneschloß,1,1,Gravieranstalt,Gummi- u. Stahlstempelfabrik,0.923,ähnliche Schreibweise,,,alueneschloss|,amueneschloss|
+Haddenbacherstraße 3,Hermann Beitzel Sohn,Hermann Beitzel & Sohn,1,1,Spiralbohrerfabrik,Werkzeugfabrik,0.923,ähnliche Schreibweise,,,hermannbeitzelsohn|,hermannbeitzelundsohn|
+Langenhaus 1a,Math. Kratz Söhne,Nath. Kratz Söhne,1,1,Werkzeuge,Maurer- u. Stuckateurwerkzeugfabrik,0.923,ähnliche Schreibweise,,,mathkratzsohn|,nathkratzsohn|
+Lenneperstraße 35b,Joh. Wilh. Arntz o. H.,Joh. Wilh. Arntz,2,2,Export | Stahl- u. Hammerwerk,"""JWAR""-Kaltkreissägeblätter und Sägeblätter aller Art | Feilen",0.923,ähnliche Schreibweise,,,johwilharntzoh|,johwilharntz|
+Rospattstraße 13,Leo Kenntemich,Leo Kenntenich,1,1,Kleidermacher (Schneider),Manufaktur- u. Tuchhandlung,0.923,ähnliche Schreibweise,,,leokenntemich|,leokenntenich|
+Stockderstraße 73,Strumpf & Co.,Stumpf & Co.,1,1,Elektrotechnische Artikel,Elektrotechnische Artikel,0.923,ähnliche Schreibweise,,,strumpf|,stumpf|
+Holz 6,Friedr. Caspar Hüchelbach Söhne,Friedr. Caspar Hüchelbach,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.920,ähnliche Schreibweise,,,friedrcasparhuechelbachsohn|,friedrcasparhuechelbach|
+Greulingstraße 31,Bergische Werkzeug-Industrie Walther Hentzen & Co.,Berg. Werkzeugindustrie Walter Hentzen & Co.,4,1,Präzisions-Maschinenwerkzeuge für Metallbearbeitung | Spiralbohrerfabrik | Tempergießerei | –,Brückenwaagenbetrieb,0.919,ähnliche Schreibweise,,,bergischewerkzeugindustriewaltherhentzen|,bergwerkzeugindustriewalterhentzen|
+Alleestraße 103,Joh. Gottl. Arns,Joh. Gottl. Arnz,3,1,"Landwirtschaftliche Maschinen u. Gerätefabrik | Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen | Werkzeugfabrik",Feilen- u. Raspenfabrik,0.917,ähnliche Schreibweise,,,johgottlarns|,johgottlarnz|
+Erholungstraße 6,Gustav Kaspar,Gustav Kasper d. J.,1,1,Handelsvertreter,Export,0.917,Generationszusatz nur bei einem,,,gustavkaspar|,gustavkasper|j
+Lenneperstraße 25,Hugo Blasberg,Hugo Plasberg,1,1,Zigarren- u. Tabakgeschäft,Herrengeschäft,0.917,ähnliche Schreibweise,,,hugoblasberg|,hugoplasberg|
+Remscheiderstraße 183,Franz Neurath,Franz Neuroth,1,2,Holzwarenfabrik,Kofferfabrik | Schreinerei,0.917,ähnliche Schreibweise,,,franzneurath|,franzneuroth|
+Alte Freiheitstraße 21,Walter Otto Bremer,Walter u. Otto Bremer,1,2,Schloß- u. Schlüsselfabrik,Schlosserei,0.914,ähnliche Schreibweise,,,walterottobremer|,walterundottobremer|
+Gewerbeschulstraße 6,Eduard Adolf Boehm,Eduard u. Adolf Boehm,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.914,ähnliche Schreibweise,,,eduardadolfboehm|,eduardundadolfboehm|
+Alleestraße 80,Rudolf Meier d. J.,Rudolf Meyer,1,1,Haushaltungsgegenständefabrik u. Handlung,Fahrradhandlung und Reparaturwerkstätte,0.909,Generationszusatz nur bei einem,,,rudolfmeier|j,rudolfmeyer|
+Freiheitstraße 32,Heinr. Nietsch,Heinr. Nitch d. J.,1,1,Autolichtanlagen und Reparaturwerkstätten,Kraftfahrzeug-Reparaturwerkstätte,0.909,Generationszusatz nur bei einem,,,heinrnietsch|,heinrnitch|j
+Küppelsteinerstraße 18,Schumacher & Co. o.H.,Schumacher & Co.,1,2,Metallsägenfabrik,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge-, Kluppen-, Schraubenschlüsselfabrik | Werkzeugfabrik",0.909,ähnliche Schreibweise,,,schumacheroh|,schumacher|
+Stockderstraße 1,Emil vom Lehn,Emil von Lehn,1,1,Autosattler,"Sattler-, Polsterer- und Polsterwaren",0.909,ähnliche Schreibweise,,,emilvomlehn|,emilvonlehn|
+Bismarckstraße 60,Theodor Ruthenbeck,Theod. Rutenbeck,1,1,Radioanlagen u. Geschäft,Elektrotechnische Artikel,0.903,ähnliche Schreibweise,,,theodorruthenbeck|,theodrutenbeck|
+Gründerhammer 4,Paul Engels Söhne,Paul Engels & Söhne,1,1,Werkzeuge,Bohrerfabrik (Böhrer f. Holz- u. Bauhandwerk),0.903,ähnliche Schreibweise,,,paulengelssohn|,paulengelsundsohn|
+Richardstraße 10,Rich. Schmidt Söne & Co.,Rich. Schmidt Söhne & Co.,1,1,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",Werkzeugfabrik,0.903,ähnliche Schreibweise,,,richschmidtsoene|,richschmidtsohn|
+Büchel 8,Otto Jäger,Otto Jöger,6,1,"Bauschreinerei | Beerdigungsinstitut | Dekorationsgeschäft | Sarglager | Sattler-, Polsterer- und Polsterwaren | Schreinerei",Möbelhandlung,0.900,ähnliche Schreibweise,,,ottojaeger|,ottojoeger|
+Fischerstraße 21a,Oesterfeld & Co.,Oesterheld & Co.,1,1,Werkzeugfabrik,Schloß- u. Schlüsselfabrik,0.900,ähnliche Schreibweise,,,oesterfeld|,oesterheld|
+Honsbergerstraße 77a,Otto Ortlinghaus & Söhne,Otto Ortlnghaus Söhne,1,1,Werkzeugfabrik,"Sägen-, Papiermesser-, Maschinenmesserfabriken u. Handlungen",0.900,ähnliche Schreibweise,,,ottoortlinghausundsohn|,ottoortlnghaussohn|
+Luisenstraße 9b,E. Stuhlfatz,E. Stuhlsatz,1,1,Destillationen u. Likörfabrik,Kleinhandlung mit Spirituosen,0.900,ähnliche Schreibweise,,,estuhlfatz|,estuhlsatz|
+Richard Pick-Straße 13,"""Eschico"" Ew. Schimmel & Co.","""Eschico-Haus"" Ew. Schimmel & Co.",1,1,"Textil-, Weiß-, Wollwaren-Großhandlung",Manufaktur- u. Tuchhandlung,0.895,ähnliche Schreibweise,,,eschicoewschimmel|,eschicohausewschimmel|
+Schüttendelle 51,Remscheider Werkzeugfabrik A. Ibach & Co.,Remscheider Werkzeugfabrik,1,2,–,A. Ibach & Co.,0.893,ähnliche Schreibweise,,,remscheiderwerkzeugfabrikaibach|,remscheiderwerkzeugfabrik|
+Alleestraße 48,Karl Beyer,Karl Reyer,1,1,Kleidermacher (Schneider,Kleidermacher (Schneider,0.889,ähnliche Schreibweise,,,karlbeyer|,karlreyer|
+Am Holscheidsberg 22,Matthias Hamerski Frau,Matthias Hamerski,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Heißmangel,0.889,ähnliche Schreibweise,,,matthiashamerskifrau|,matthiashamerski|
+Burgerstraße 154,Heinr. Cürten d. Ä.,Heinrich Gürten d. Ä.,1,1,Feilen- u. Raspenfabrik,Werkzeugfabrik,0.889,ähnliche Schreibweise,,,heinrcuerten|ä,heinrichguerten|ä
+Büchelstraße 9,Karl Aug. Kottmann,Karl Kottmann,1,1,Uhrmacher u. Uhrwarenhandlung,Juwelier und Juwelengeschäft,0.889,ähnliche Schreibweise,,,karlaugkottmann|,karlkottmann|
+Fichtenstraße 63,Adolf Jansen Frau Wwe.,Adolf Jansen Wwe.,1,1,Gummi- u. Stahlstempelfabrik,Gravieranstalt,0.889,ähnliche Schreibweise,,,adolfjansenfrauwitwe|,adolfjansenwitwe|
+Fürbergerstraße 15,Adolf Paas,Adolf Paß,1,1,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",Werkzeugfabrik,0.889,ähnliche Schreibweise,,,adolfpaas|,adolfpass|
+Gertenbachstraße 46,Hugo Heyer,Hugo Meyer,2,1,Matrizenschlosserei | Werkzeuge,"Gaswerkzeuge-, Bohrknarren-, Gewindeschneidwerkzeuge- (Kluppen) u. Schraubenschlüsselfabrik",0.889,ähnliche Schreibweise,,,hugoheyer|,hugomeyer|
+Teichstraße 10,Paul Beres,Paul Berns,1,1,Klempner- u. Installateurgeschäft,Schreinerei,0.889,ähnliche Schreibweise,,,paulberes|,paulberns|
+Hindenburgstraße 29,Siegfried Schepmann,Siegfr. Scheppmann,1,1,Radioanlagen u. Geschäft,Elektrotechnische Artikel,0.882,ähnliche Schreibweise,,,siegfriedschepmann|,siegfrscheppmann|
+Bismarckstraße 130,Allgem. Krankenversicherungs-Akt.-Ges.,Allgem. Kranken-Versicherung,1,1,Köln,Köln,0.877,ähnliche Schreibweise,,,allgemkrankenversicherungsaktges|,allgemkrankenversicherung|
+Daniel Schürmann-Straße 25,Mich. Haag,Mich Hagg,1,1,Beerdigungsinstitut,"Beerdigungsgeschäft ""Friede""",0.875,ähnliche Schreibweise,,,michhaag|,michhagg|
+Haddenbacherstraße 3,Hermann Beitzel Sohn,Hermann Beitzel,1,1,Spiralbohrerfabrik,Huf- und Wagenschmiede,0.875,ähnliche Schreibweise,,,hermannbeitzelsohn|,hermannbeitzel|
+Ludwigstraße 10,Walter Buchholz Frau,Walter Buchholz,1,1,Klempner und Installationsgeschäft,Kupferschläger und Pumpenmacher,0.875,ähnliche Schreibweise,,,walterbuchholzfrau|,walterbuchholz|
+Neuenkamperstraße 1,Joh. Peter Becker junr. A.-G.,Joh. Peter Becker jun.,1,2,Export,Brückenwaagenbetrieb | Rollschuhfabrik,0.875,Generationszusatz nur bei einem,,,johpeterbeckerjunr|,johpeterbecker|j
+Solingerstraße 42a,C. Gommann & Co.,E. Gommann & Co.,1,1,Werkzeugfabrik,Sägen-  u. Maschinenmesserfabrik,0.875,ähnliche Schreibweise,,,cgommann|,egommann|
+Baisieperstraße 67,August Jansen Sohn,August Jansen,1,2,Stahl- u. Hammerwerk,"Remscheider Großfärberei ""Edelweiß"" | Remscheider Großwäscherei ""Edelweiß""",0.857,ähnliche Schreibweise,,,augustjansensohn|,augustjansen|
+Honsbergerstraße 17,Karl Aug. Nusch,Karl Nusch,1,1,Kleinhandlung mit Spirituosen,"Kolonial-, Spezerei-, Viktualien- u. Kartoffelhandlung",0.857,ähnliche Schreibweise,,,karlaugnusch|,karlnusch|
+Müngsten 2,Richard Weber Frau,Richard Weber,1,1,Bäckerei,Gast- u. Schankwirtschaft,0.857,ähnliche Schreibweise,,,richardweberfrau|,richardweber|
+Rospattstraße 13,Hermann Schaefer Wwe.,Hermann Schäfer,2,1,Fuhrgeschäft | Güterbestätter,Speditionsgeschäft,0.857,ähnliche Schreibweise,,,hermannschaeferwitwe|,hermannschaefer|
