@@ -14,10 +14,11 @@ Filter wirklich benoetigt werden.
 """
 import csv
 import json
-import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+from branchen import extract_erst_branche
 
 REPO = Path(__file__).resolve().parent.parent
 GEOCODED_FILE = REPO / "output" / "remscheid1935_geocoded.csv"
@@ -25,29 +26,6 @@ MAPPING_FILE = REPO / "data" / "branchen_mapping.csv"
 WEB_DIR = REPO / "docs" / "data"
 GEOJSON_FILE = WEB_DIR / "gewerbe.geojson"
 BRANCHEN_FILE = WEB_DIR / "branchen.json"
-
-# Identisch zu 04_branchen_klassifikation.py
-RECHTSFORM = re.compile(
-    r"^(?:G\.?\s*m\.?\s*b\.?\s*H\.?|A\.?-?G\.?|Kom\.?-?Ges\.?|K\.?G\.?|OHG|o\.\s*H\.?|e\.\s*G\.|e\.\s*V\.|i\.\s*L\.|"
-    r"Inh\.?|Inhaber|Geschäftsführer|G\.F\.|Komm\.?-?Ges\.?)$",
-    re.IGNORECASE,
-)
-_INCOMPLETE = re.compile(r"(?:[-‐]|\bu\.|\bund)\s*$")
-
-
-def extract_erst_branche(firmenname: str) -> str:
-    if not firmenname or "," not in firmenname:
-        return ""
-    parts = [p.strip() for p in firmenname.split(",")]
-    buf = ""
-    for p in parts[1:]:
-        if not p or RECHTSFORM.match(p):
-            continue
-        buf = p if not buf else f"{buf}, {p}"
-        if _INCOMPLETE.search(buf):
-            continue
-        return buf
-    return buf
 
 
 def main() -> int:

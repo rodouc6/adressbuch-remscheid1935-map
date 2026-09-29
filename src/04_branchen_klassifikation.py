@@ -24,16 +24,11 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from branchen import extract_erst_branche
+
 REPO = Path(__file__).resolve().parent.parent
 INPUT_FILE = REPO / "output" / "remscheid1935_geocoded.csv"
 OUTPUT_FILE = REPO / "data" / "branchen_mapping.csv"
-
-# Rechtsform-Tokens, die als Erst-Branche uebersprungen werden
-RECHTSFORM = re.compile(
-    r"^(?:G\.?\s*m\.?\s*b\.?\s*H\.?|A\.?-?G\.?|Kom\.?-?Ges\.?|K\.?G\.?|OHG|o\.\s*H\.?|e\.\s*G\.|e\.\s*V\.|i\.\s*L\.|"
-    r"Inh\.?|Inhaber|Geschäftsführer|G\.F\.|Komm\.?-?Ges\.?)$",
-    re.IGNORECASE,
-)
 
 
 # ---------------------------------------------------------------------------
@@ -194,33 +189,6 @@ REGELN: list[tuple[re.Pattern, str, str, str]] = [
     (re.compile(r"abladeunternehm|abladen"),             "Abladeunternehmung",           "Verkehr und Brennstoffe",      "52.24"),
     (re.compile(r"hufbeschlag|wagenbau"),                "Wagenbau / Hufbeschlag",       "Verkehr und Brennstoffe",      "30.99"),
 ]
-
-
-_INCOMPLETE = re.compile(r"(?:[-‐]|\bu\.|\bund)\s*$")
-
-
-def extract_erst_branche(firmenname: str) -> str:
-    """Extrahiert die Erst-Branche aus Firmenname.
-
-    - Komma-Split, anschliessend Rechtsform-Tokens (G.m.b.H., Kom.-Ges. etc.) ueberspringen.
-    - Wenn ein Token mit '-', ' u.' oder ' und' endet, ist es ein Praefix einer
-      zusammengesetzten Branche (z.B. 'Weiß-' aus 'Weiß-, Bunt- u. Wollwarengeschäft').
-      Solche Tokens werden mit den naechsten Tokens (per ', ' verbunden) zusammengefuegt,
-      bis ein vollstaendiges Ende erreicht ist.
-    """
-    if not firmenname or "," not in firmenname:
-        return ""
-    parts = [p.strip() for p in firmenname.split(",")]
-    # parts[0] = Firmenname-Kopf, parts[1:] = Branchen + ggf. Rechtsformen
-    buf = ""
-    for p in parts[1:]:
-        if not p or RECHTSFORM.match(p):
-            continue
-        buf = p if not buf else f"{buf}, {p}"
-        if _INCOMPLETE.search(buf):
-            continue
-        return buf
-    return buf  # Edge-Case: Letztes Token war unvollstaendig - trotzdem zurueckgeben
 
 
 def klassifiziere(branche: str) -> tuple[str, str, str, int]:
