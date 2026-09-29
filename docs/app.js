@@ -81,24 +81,9 @@ const BERGISCHES_LAND = [
 
 const map = new maplibregl.Map({
   container: "map",
-  style: {
-    version: 8,
-    sources: {
-      carto: {
-        type: "raster",
-        tiles: [
-          "https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-          "https://cartodb-basemaps-b.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-          "https://cartodb-basemaps-c.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-        ],
-        tileSize: 256,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> ' +
-          '&copy; <a href="https://carto.com/attribution" target="_blank" rel="noopener">CARTO</a>',
-      },
-    },
-    layers: [{ id: "carto", type: "raster", source: "carto", paint: { "raster-saturation": -0.2 } }],
-  },
+  // Vektor-Grundkarte von OpenFreeMap (ohne API-Key); bringt Schriften fuer Text-Layer mit.
+  // Attribution (OpenFreeMap, OpenMapTiles, OpenStreetMap) liefert der Stil selbst.
+  style: "https://tiles.openfreemap.org/styles/positron",
   center: REMSCHEID,
   zoom: 12.5,
   minZoom: 10,
@@ -209,7 +194,7 @@ map.on("load", () => {
       minzoom: 12.5,
       layout: {
         "text-field": ["to-string", ["get", "werkzeug_count"]],
-        "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+        "text-font": ["Noto Sans Bold"],
         "text-size": 11,
         "text-offset": [1.0, -1.0],
         "text-allow-overlap": true,
@@ -314,9 +299,12 @@ const DOTS_BASE_RADIUS = [
   9,  ["interpolate", ["linear"], ["coalesce", ["get", "werkzeug_count"], 1], 1, 1.6, 5, 3.2, 15, 5.5],
   12, ["interpolate", ["linear"], ["coalesce", ["get", "werkzeug_count"], 1], 1, 3.0, 5, 5.5, 15, 9.0],
 ];
-const DOTS_BASE_OPACITY = [
-  "interpolate", ["linear"], ["zoom"], 9, 0.55, 12, 0.8,
+// Zoom-Ausdruecke duerfen nur ganz oben stehen; der Animationsfaktor p wird
+// deshalb in die Stuetzwerte hineinmultipliziert statt aussen herum.
+const dotsOpacity = (p = 1) => [
+  "interpolate", ["linear"], ["zoom"], 9, ["*", 0.55, p], 12, ["*", 0.8, p],
 ];
+const DOTS_BASE_OPACITY = dotsOpacity();
 
 function progressExpr(T) {
   // T = absolute Zeit in Sekunden (performance.now()/1000).
@@ -343,7 +331,7 @@ function applyAppearFrame(t) {
     map.setPaintProperty("points", "circle-stroke-opacity", ["*", 0.85, p]);
   }
   if (map.getLayer("points-werkzeug-dots")) {
-    map.setPaintProperty("points-werkzeug-dots", "circle-opacity", ["*", DOTS_BASE_OPACITY, p]);
+    map.setPaintProperty("points-werkzeug-dots", "circle-opacity", dotsOpacity(p));
     map.setPaintProperty("points-werkzeug-dots", "circle-stroke-opacity", ["*", 0.75, p]);
   }
   if (map.getLayer("points-werkzeug-symbols")) {
