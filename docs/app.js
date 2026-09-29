@@ -111,6 +111,13 @@ const COLOR_EXPR = ["match", ["get", "oberkategorie"]];
 for (const [k, v] of Object.entries(COLORS)) { COLOR_EXPR.push(k, v); }
 COLOR_EXPR.push(DEFAULT_COLOR);
 
+// Verortungsgenauigkeit aus der Pipeline (03_join_geojson.py): haus | strasse | ungefaehr
+const IST_HAUSGENAU = ["==", ["get", "genauigkeit"], "haus"];
+const GENAUIGKEIT_TEXT = {
+  strasse: "nur auf die Straße genau verortet",
+  ungefaehr: "nur ungefähr verortet (Ortsteil/Hofschaft)",
+};
+
 map.on("load", () => {
   map.addSource("gewerbe", {
     type: "geojson",
@@ -131,9 +138,10 @@ map.on("load", () => {
         15, 6,
         17, 9,
       ],
-      "circle-stroke-width": 1,
-      "circle-stroke-color": "rgba(255,255,255,0.85)",
-      "circle-opacity": 0.88,
+      // Nicht hausgenau verortete Punkte: blasse Fuellung, Ring in Kategoriefarbe
+      "circle-stroke-width": ["case", IST_HAUSGENAU, 1, 1.5],
+      "circle-stroke-color": ["case", IST_HAUSGENAU, "rgba(255,255,255,0.85)", COLOR_EXPR],
+      "circle-opacity": POINTS_BASE_OPACITY,
     },
   });
 
@@ -300,7 +308,7 @@ let appearRafId = null;
 const POINTS_BASE_RADIUS = [
   "interpolate", ["linear"], ["zoom"], 10, 2.5, 13, 4, 15, 6, 17, 9,
 ];
-const POINTS_BASE_OPACITY = 0.88;
+const POINTS_BASE_OPACITY = ["case", IST_HAUSGENAU, 0.88, 0.3];
 const DOTS_BASE_RADIUS = [
   "interpolate", ["linear"], ["zoom"],
   9,  ["interpolate", ["linear"], ["coalesce", ["get", "werkzeug_count"], 1], 1, 1.6, 5, 3.2, 15, 5.5],
@@ -723,8 +731,11 @@ function showClusterPopup(coords, p) {
   if (state.popup) state.popup.remove();
   const liste = parseArray(p.werkzeug_mitglieder);
   const adresse = (p.adresse || "") + (p.ortsname ? ", " + p.ortsname : "");
+  const hinweis = GENAUIGKEIT_TEXT[p.genauigkeit]
+    ? `<div class="popup__row popup__row--hinweis">Lage: ${GENAUIGKEIT_TEXT[p.genauigkeit]}</div>` : "";
   const head = `<div class="popup__title">${liste.length} Firmen an dieser Adresse</div>
-    <div class="popup__row" style="margin-bottom:8px">${escapeHtml(adresse)}</div>`;
+    <div class="popup__row">${escapeHtml(adresse)}</div>${hinweis}
+    <div style="margin-bottom:8px"></div>`;
   const items = liste.map((m) => {
     const branchen = refineBranchen(m.branchen);
     const branchen_html = branchen.length
@@ -765,6 +776,7 @@ function showPopup(coords, p) {
     <div class="popup__title">${escapeHtml(name)}</div>
     ${owner ? `<div class="popup__row"><strong>Inhaber:</strong> ${escapeHtml(owner)}</div>` : ""}
     <div class="popup__row"><strong>Adresse:</strong> ${escapeHtml(p.adresse || "—")}${p.ortsname ? ", " + escapeHtml(p.ortsname) : ""}</div>
+    ${GENAUIGKEIT_TEXT[p.genauigkeit] ? `<div class="popup__row popup__row--hinweis">Lage: ${GENAUIGKEIT_TEXT[p.genauigkeit]}</div>` : ""}
     ${catHtml}
   `;
   state.popup = new maplibregl.Popup({ offset: 12, closeButton: true, maxWidth: "320px" })

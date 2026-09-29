@@ -79,6 +79,7 @@ def main() -> int:
                 "ortsname": row.get("Ortsname", ""),
                 "oberkategorie": ok,
                 "unterbranche": ub,
+                "genauigkeit": row.get("genauigkeit", ""),
             }
             features.append({
                 "type": "Feature",
