@@ -1,36 +1,80 @@
 # Pipeline — Adressbuch Remscheid 1935
 
+Sieben Schritte von der CompGen-Erfassung zu den Kartendaten in `docs/data/`.
+Alle Skripte werden aus dem Repository-Hauptordner aufgerufen.
+
 ## Voraussetzungen
 
-- Python 3.10+
-- Modul `requests` (`pip install requests`)
-- Lokale Nominatim-Instanz auf `http://localhost:8080` (Port in `02_geocodierung.py` konfigurierbar) — z.B. `mediagis/nominatim:4.4` Container
+- Python 3.10+, `pip install -r requirements.txt` (nur `requests`)
+- Für Schritt 2: lokale Nominatim-Instanz auf `http://localhost:8080`
+  (z. B. Container `mediagis/nominatim:4.4`; URL in `02_geocodierung.py`)
+- Für Schritt 5: `KICONNECT_API_KEY` in `.env` (Vorlage: `.env.example`)
 
 ## Ablauf
 
 ```bash
-# Schritt 1: Filter + Adressnormalisierung
-python3 src/01_vorbereitung.py
-
-# Schritt 2: Nominatim-Abfrage (Resume-faehig, kann abgebrochen werden)
-python3 src/02_geocodierung.py
-
-# Schritt 3: Cache joinen, finalen CSV + GeoJSON schreiben
-python3 src/03_join_geojson.py
+python3 src/01_vorbereitung.py              # Filter + Adressnormalisierung
+python3 src/02_geocodierung.py              # Nominatim, resume-fähig
+python3 src/03_join_geojson.py              # Koordinaten + Genauigkeit anfügen
+python3 src/04_branchen_klassifikation.py   # Stichwortregeln -> branchen_mapping.csv
+python3 src/05_llm_branchen_klassifikation.py [--limit N]   # Sprachmodell, resume-fähig
+python3 src/06_gewerbe_export.py            # Kartendaten schreiben
+python3 src/07_werkzeug_konsolidierung.py   # Werkzeugfirmen + Piktogramme
 ```
+
+Schritt 2 und 5 fragen nur ab, was noch nicht im Cache in `output/` steht.
+Nach einer Änderung an `strassen_mapping.csv` reichen 01–03 und 06–07; nach
+einer Änderung an `branchen_mapping.csv` reichen 06–07. Schritt 7 überschreibt
+die Ausgabe von Schritt 6 und lässt sich beliebig oft wiederholen.
+
+Tests (ohne Nominatim und Sprachmodell): `python3 -m unittest discover tests`
 
 ## Eingabe / Ausgabe
 
 | Datei | Erzeugt von | Inhalt |
 |---|---|---|
-| `data/remscheidABNRW1935.csv` | (vorhanden) | Quelle (TSV trotz `.csv`-Endung) |
-| `output/remscheid1935_geovorbereitung.csv` | 01 | gefiltert auf EinwVz+GewVz, `generation`, `adresse_norm`, `geoadresse` |
-| `output/unique_geoadressen.csv` | 02 | distinkte `geoadresse` mit Frequenz |
-| `output/geocoding_cache.csv` | 02 | Nominatim-Antworten (inkrementell, resume-faehig) |
-| `output/remscheid1935_geocoded.csv` | 03 | alle Zeilen + Koordinaten |
-| `output/remscheid1935.geojson` | 03 | nur Zeilen mit Treffer |
-| `output/geocoding_fehlschlaege.csv` | 03 | distinkte ungefundene Adressen + Frequenz |
+| `data/remscheidABNRW1935.csv` | (Quelle) | CompGen-Erfassung, **Tab-getrennt** trotz `.csv` |
+| `data/strassen_mapping.csv` | von Hand | Regex historischer Straßenname → heutiger Name, mit Kommentar |
+| `output/remscheid1935_geovorbereitung.csv` | 01 | nur EinwVz + GewVz; `generation`, `adresse_norm`, `geoadresse` |
+| `output/unique_geoadressen.csv` | 02 | distinkte `geoadresse` mit Häufigkeit |
+| `output/geocoding_cache.csv` | 02 | Nominatim-Antworten (inkrementell) |
+| `output/remscheid1935_geocoded.csv` | 03 | alle Zeilen + Koordinaten + `genauigkeit` |
+| `output/remscheid1935.geojson` | 03 | alle Zeilen mit Treffer |
+| `output/geocoding_fehlschlaege.csv` | 03 | distinkte Adressen ohne Treffer + Häufigkeit |
+| `data/branchen_mapping.csv` | 04, 05 | Erst-Branche → Unterbranche, Oberkategorie, WZ 2008 |
+| `output/llm_branchen_cache.json` | 05 | Antworten des Sprachmodells je Erst-Branche |
+| `docs/data/gewerbe.geojson` | 06, 07 | GewVz-Punkte für die Karte |
+| `docs/data/branchen.json` | 06 | Filterhierarchie Oberkategorie → Unterbranchen |
+| `data/werkzeug_konsolidierung.csv` | 07 | Prüfliste: welche Unterbranche welches Piktogramm bekommt |
 
-## Filter- und Normalisierungsregeln
+## Regeln im Einzelnen
 
-Siehe `10-Projekte/Adressbuch-Remscheid-1935/Geokodierung-Vorbereitung.md` im Obsidian-Vault.
+**Adressnormalisierung (01).** `78/80` → `78`, `2-4` → `2`, `5 u. 6` → `5`;
+„… Ecke …“ und der Marker „xxx nicht in Liste xxx“ entfallen. Danach greift
+die erste passende Regel aus `strassen_mapping.csv`. Generationszusätze
+(`d. J.`, `d. Ä.`) wandern vom Vornamen in die Spalte `generation`.
+
+**Genauigkeit (03).** `haus`, wenn die Nominatim-Antwort eine Hausnummer
+enthält (Gebäude, Adresspunkt oder benanntes Objekt mit Hausnummer);
+`strasse`, wenn nur die Straße gefunden wurde (`class = highway`);
+sonst `ungefaehr` (Ortsteil, Hofschaft).
+
+**Erst-Branche (04, 06).** Die erste Angabe nach dem Firmennamen im Feld
+`Firmenname`, Rechtsformen wie `G.m.b.H.` übersprungen, zerteilte Angaben wie
+„Weiß-, Bunt- u. Wollwarengeschäft“ wieder zusammengesetzt. Die Logik steht
+einmal in `src/branchen.py`, damit 04 und 06 dieselben Schlüssel bilden.
+
+**Branchen-Mapping (04, 05).** 04 schlägt per Stichwortregel eine Kategorie
+vor und schreibt sie in die Spalten `heuristik_*`. Existiert das Mapping schon,
+wird es zusammengeführt: bekannte Branchen behalten ihre Einordnung, neue
+kommen mit `quelle = heuristik` hinzu, weggefallene bleiben mit
+`frequency = 0` stehen. 05 lässt jede Branche vom Sprachmodell einer von
+17 Oberkategorien zuordnen; das Ergebnis ersetzt die Heuristik, der WZ-2008-Code
+ist grob je Oberkategorie gesetzt. **Zeilen mit `quelle = manuell` fassen weder
+04 noch 05 inhaltlich an** — so markiert man Korrekturen von Hand.
+
+**Werkzeug-Konsolidierung (07).** Mehrere Einträge derselben Firma (gleicher
+Firmenname-Kopf, gleiche Koordinate) werden zu einem; die Firma erhält das
+spezifischste Piktogramm (z. B. Schraubstock vor „Werkzeugfabrik“). Stehen
+danach mehrere Firmen am selben Punkt, trägt eine davon das Symbol, die
+anderen erscheinen in ihrer Liste.

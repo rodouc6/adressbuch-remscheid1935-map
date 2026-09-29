@@ -1,0 +1,112 @@
+# Gewerbe in Remscheid 1935
+
+Eine interaktive Karte der Remscheider Betriebe aus dem Adressbuch von 1935,
+und die Aufbereitung dahinter.
+
+**Zur Karte: <https://rodouc6.github.io/adressbuch-remscheid1935-map/>**
+
+![Die Karte von Remscheid mit farbigen Punkten für rund 9 000 Betriebe, oben die Filterleiste mit den Branchen-Kategorien](docs/bilder/karte-uebersicht.jpg)
+
+## Worum es geht
+
+Das *Einwohner- und Geschäfts-Handbuch der Stadt Remscheid* von 1935 verzeichnet
+Einwohner, Behörden, Straßen und Gewerbe der Stadt. Freiwillige des Vereins für
+Computergenealogie (CompGen) haben die 718 Seiten vollständig abgeschrieben.
+Dieses Projekt nimmt das **Gewerbeverzeichnis** aus dieser Erfassung, verortet
+jeden Betrieb auf einer heutigen Karte und ordnet ihn einer Branche zu:
+
+- **9 361 Einträge** im Gewerbeverzeichnis, davon **9 073 auf der Karte**
+- **924 verschiedene Branchenbezeichnungen**, so wie die Quelle sie führt,
+  zusammengefasst zu **17 Kategorien**
+- **Werkzeugindustrie** als Schwerpunkt: 1 685 Einträge von 1 171 Firmen, auf
+  Wunsch als Piktogramme (Säge, Feile, Zange, Hammer, …) dargestellt
+
+Auf der Karte lassen sich Kategorien ein- und ausblenden, Firmen und Inhaber
+suchen und die Werkzeugbetriebe gesondert zeigen.
+
+![Ausschnitt der Innenstadt im Piktogramm-Modus: schwarze Werkzeug-Symbole zeigen, was die Betriebe herstellten; kleine Zahlen nennen mehrere Firmen an derselben Adresse](docs/bilder/karte-werkzeug.jpg)
+
+## Vom Adressbuch zur Karte
+
+```
+  Adressbuch Remscheid 1935 (gedruckt)
+        │
+        │  Erfassung durch CompGen-Freiwillige       ┐  vorgelagert,
+        ▼                                             ┘  nicht Teil dieses Projekts
+  data/remscheidABNRW1935.csv   (ein Eintrag je Zeile)
+        │
+        │  01  Gewerbe- und Einwohnerverzeichnis auswählen,
+        │      Adressen vereinfachen    ◄── data/strassen_mapping.csv
+        │  02  verorten über Nominatim (OpenStreetMap)
+        │  03  Genauigkeit jedes Treffers bewerten
+        │  04  Branche per Stichwortregeln vorschlagen  ──►  data/branchen_mapping.csv
+        │  05  Branche per Sprachmodell prüfen          ──►  (dieselbe Datei)
+        │  06  Kartendaten schreiben
+        │  07  Werkzeugfirmen zusammenfassen, Piktogramme zuordnen
+        ▼
+  docs/   Website: Karte mit Filter und Suche
+```
+
+1. **Adressen vereinfachen.** Doppelte Hausnummern werden auf die erste
+   verkürzt (`78/80` → `78`), Eckangaben entfallen. Straßen, die seit 1935
+   umbenannt wurden, werden auf den heutigen Namen gesetzt, etwa die
+   Adolf-Hitler-Straße auf die Alleestraße. Die 35 Regeln dafür stehen mit
+   Begründung in `data/strassen_mapping.csv`.
+2. **Verorten.** Jede Adresse wurde gegen eine lokale Nominatim-Instanz mit
+   heutigen OpenStreetMap-Daten abgefragt.
+3. **Branchen zuordnen.** Die erste Branchenangabe nach dem Firmennamen wird
+   zuerst über Stichwortregeln, dann über ein Sprachmodell (Mistral Small über
+   KI:connect.nrw) einer Kategorie zugeordnet. Beide Vorschläge und die
+   Begründung des Modells bleiben in `data/branchen_mapping.csv` nachlesbar.
+   Zeilen mit `quelle = manuell` überschreibt kein Skript.
+4. **Zeigen.** Die Website ist statisch: HTML, CSS und JavaScript mit
+   MapLibre, Grundkarte von OpenFreeMap, ohne Server und ohne Datenbank.
+
+Die Skripte, ihre Ein- und Ausgaben und der Ablauf im Einzelnen stehen in
+[`src/README.md`](src/README.md).
+
+## Grenzen der Daten
+
+- **Heutige Karte, historische Adressen.** Remscheid wurde 1943 schwer
+  zerstört, Straßen wurden umbenannt und Häuser neu nummeriert. Auch ein
+  „hausgenauer“ Treffer zeigt das heutige Haus mit dieser Nummer, nicht
+  zwingend das von 1935.
+- **Verortung.** Von den 9 073 Betrieben auf der Karte sind 7 282 hausgenau
+  verortet, 1 674 nur auf die Straße und 117 nur ungefähr (Ortsteil oder
+  Hofschaft). Die ungenauen Punkte sind auf der Karte blass mit farbigem Ring
+  gezeichnet; mehrere Betriebe derselben Straße liegen dann übereinander.
+  288 Einträge ließen sich nicht verorten.
+- **Branchen sind Zuordnungen, keine Quellenangaben.** Die Kategorien stammen
+  aus diesem Projekt, nicht aus dem Adressbuch. 52 Branchenbezeichnungen sind
+  noch als „prüfen“ markiert, 203 Betriebe blieben ohne Kategorie.
+- **Nur das Gewerbeverzeichnis.** Das Einwohnerverzeichnis (43 017 Einträge)
+  wird mit verortet, erscheint aber nicht auf der Karte.
+- **Die Bezeichnungen stammen aus der Quelle.** Straßennamen der NS-Zeit
+  stehen in den Einträgen so, wie sie 1935 gedruckt wurden.
+
+## Aufbau des Repositorys
+
+```
+docs/          Website (GitHub Pages): index.html, app.js, app.css, Kartendaten
+data/          Quelle und die von Hand gepflegten Zuordnungen
+src/           Aufbereitung in sieben Schritten (Python)
+tests/         Tests der Aufbereitung: python3 -m unittest discover tests
+```
+
+Zwischenergebnisse landen in `output/` und sind nicht im Repository; sie
+lassen sich aus `data/` und `src/` neu erzeugen.
+
+## Quelle, Lizenz, Kontakt
+
+**Quelle:** Einwohner- und Geschäfts-Handbuch der Stadt Remscheid, 16. Jahrgang,
+Remscheid 1935. Erfasst von Freiwilligen des Vereins für Computergenealogie e.V.
+im Rahmen des [CompGen-Adressbuchprojekts](https://wiki.genealogy.net/Remscheid/Adressbuch_1935);
+Digitalisat in der [Digibib von genealogy.net](https://www.digibib.genealogy.net/viewer/image/871718278D_1935/1/-/).
+
+**Lizenz:** Der Code steht unter der MIT-Lizenz, die eigene Aufbereitung
+(Koordinaten, Genauigkeit, Straßen- und Branchenzuordnung) unter CC BY 4.0.
+Ausgenommen ist die Quelldatei `data/remscheidABNRW1935.csv`; für sie gelten
+die Bedingungen von CompGen. Näheres in [`LICENSE`](LICENSE) und
+[`LICENSE-DATEN.md`](LICENSE-DATEN.md).
+
+**Kontakt:** Christos Rodouniklis, Bergische Universität Wuppertal.
