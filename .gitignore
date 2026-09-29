@@ -2,4 +2,7 @@
 __pycache__/
 *.pyc
 # Pipeline-Zwischenstände — werden vollständig aus src/ + data/ regeneriert
-output/.playwright-mcp/
+output/
+
+# Screenshots und Logs der Browser-Tests
+.playwright-mcp/

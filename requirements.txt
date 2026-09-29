@@ -1,0 +1,3 @@
+# Fuer src/02_geocodierung.py und src/05_llm_branchen_klassifikation.py;
+# alle anderen Skripte kommen mit der Standardbibliothek aus. Python >= 3.10.
+requests>=2.28

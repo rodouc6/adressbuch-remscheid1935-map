@@ -6,8 +6,8 @@ Schritt 6: GeoJSON-Export der Gewerbe-Einträge fuer die Webkarte.
 - Extrahiert die Erst-Branche aus Firmenname (identisch zu Schritt 4).
 - Joint per Erst-Branche mit data/branchen_mapping.csv -> oberkategorie + unterbranche.
 - Erzeugt:
-    web/data/gewerbe.geojson   minimaler Punktdatensatz
-    web/data/branchen.json     Filterhierarchie Oberkategorie -> Unterbranchen mit Frequenz
+    docs/data/gewerbe.geojson   minimaler Punktdatensatz
+    docs/data/branchen.json     Filterhierarchie Oberkategorie -> Unterbranchen mit Frequenz
 
 Output ist bewusst schlank: nur die Properties, die fuer Anzeige, Suche und
 Filter wirklich benoetigt werden.

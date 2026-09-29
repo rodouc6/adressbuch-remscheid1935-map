@@ -20,8 +20,8 @@ Symbol-Wahl-Logik (innerhalb einer Firma):
   So bekommt Erlenkötter & Voß das 'schraubstock'-Symbol, nicht das generische
   'Werkzeugfabrik'-Symbol.
 
-Eingabe : web/data/gewerbe.geojson
-Ausgabe : web/data/gewerbe.geojson (ueberschreibt)
+Eingabe : docs/data/gewerbe.geojson (aus Schritt 6)
+Ausgabe : docs/data/gewerbe.geojson (ueberschreibt; wiederholbar)
           data/werkzeug_konsolidierung.csv
 """
 import csv
@@ -35,6 +35,9 @@ REPO = Path(__file__).resolve().parent.parent
 GEOJSON_FILE = REPO / "docs" / "data" / "gewerbe.geojson"
 AUDIT_FILE = REPO / "data" / "werkzeug_konsolidierung.csv"
 WERKZEUG_KAT = "Werkzeugindustrie"
+# Von diesem Schritt gesetzte Properties
+WERKZEUG_FELDER = ("werkzeug_symbol", "is_pikto_anchor", "werkzeug_count",
+                   "werkzeug_mitglieder", "werkzeug_branchen")
 
 REGELN: list[tuple[re.Pattern, str]] = [
     (re.compile(r"schleif|polier"),              "schleifstein"),
@@ -97,10 +100,10 @@ def main() -> int:
     sym_total: Counter[str] = Counter()
     for feat in g["features"]:
         p = feat["properties"]
+        # Ergebnisse eines frueheren Laufs verwerfen, damit 07 wiederholbar ist
+        for k in WERKZEUG_FELDER:
+            p.pop(k, None)
         if p.get("oberkategorie") != WERKZEUG_KAT:
-            for k in ("werkzeug_symbol", "is_pikto_anchor", "werkzeug_count",
-                     "werkzeug_mitglieder", "werkzeug_branchen"):
-                p.pop(k, None)
             continue
         sym = piktogramm(p.get("unterbranche", "") or "")
         p["werkzeug_symbol"] = sym
