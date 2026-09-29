@@ -500,7 +500,7 @@ let search = null;
 function buildSearchIndex() {
   search = new MiniSearch({
     fields: ["firmenname", "name", "adresse", "unterbranche"],
-    storeFields: ["id", "firmenname", "lastname", "firstname", "adresse", "ortsname", "oberkategorie", "unterbranche", "lng", "lat"],
+    storeFields: ["id", "firmenname", "lastname", "firstname", "adresse", "ortsname", "oberkategorie", "unterbranche", "genauigkeit", "lng", "lat"],
     searchOptions: { boost: { firmenname: 2, name: 1.5 }, prefix: true, fuzzy: 0.2 },
     idField: "fid",
   });
@@ -515,6 +515,7 @@ function buildSearchIndex() {
     ortsname: f.properties.ortsname,
     oberkategorie: f.properties.oberkategorie,
     unterbranche: f.properties.unterbranche,
+    genauigkeit: f.properties.genauigkeit,
     lng: f.geometry.coordinates[0],
     lat: f.geometry.coordinates[1],
   }));
