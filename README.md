@@ -9,11 +9,13 @@ und die Aufbereitung dahinter.
 
 ## Worum es geht
 
-Das *Einwohner- und Geschäfts-Handbuch der Stadt Remscheid* von 1935 verzeichnet
+Das *Einwohner- und Geschäfts-Handbuch für Groß-Remscheid* von 1935 verzeichnet
 Einwohner, Behörden, Straßen und Gewerbe der Stadt. Freiwillige des Vereins für
-Computergenealogie (CompGen) haben die 718 Seiten vollständig abgeschrieben.
-Dieses Projekt nimmt das **Gewerbeverzeichnis** aus dieser Erfassung, verortet
-jeden Betrieb auf einer heutigen Karte und ordnet ihn einer Branche zu:
+Computergenealogie (CompGen) haben die 718 Seiten vollständig abgeschrieben; der
+Verein hat die Erfassung 2021 für den Kultur-Hackathon *Coding da Vinci
+Nieder.Rhein.Land* als offene Daten bereitgestellt. Dieses Projekt nimmt das
+**Gewerbeverzeichnis** daraus, verortet jeden Betrieb auf einer heutigen Karte
+und ordnet ihn einer Branche zu:
 
 - **9 361 Einträge** im Gewerbeverzeichnis, davon **9 073 auf der Karte**
 - **924 verschiedene Branchenbezeichnungen**, so wie die Quelle sie führt,
@@ -31,9 +33,10 @@ suchen und die Werkzeugbetriebe gesondert zeigen.
 ```
   Adressbuch Remscheid 1935 (gedruckt)
         │
-        │  Erfassung durch CompGen-Freiwillige       ┐  vorgelagert,
-        ▼                                             ┘  nicht Teil dieses Projekts
-  data/remscheidABNRW1935.csv   (ein Eintrag je Zeile)
+        │  Erfassung durch CompGen-Freiwillige,      ┐  vorgelagert,
+        │  bereitgestellt über Coding da Vinci 2021   ┘  nicht Teil dieses Projekts
+        ▼
+  data/remscheidABNRW1935.csv   (ein Eintrag je Zeile, unverändert)
         │
         │  01  Gewerbe- und Einwohnerverzeichnis auswählen,
         │      Adressen vereinfachen    ◄── data/strassen_mapping.csv
@@ -98,15 +101,20 @@ lassen sich aus `data/` und `src/` neu erzeugen.
 
 ## Quelle, Lizenz, Kontakt
 
-**Quelle:** Einwohner- und Geschäfts-Handbuch der Stadt Remscheid, 16. Jahrgang,
-Remscheid 1935. Erfasst von Freiwilligen des Vereins für Computergenealogie e.V.
-im Rahmen des [CompGen-Adressbuchprojekts](https://wiki.genealogy.net/Remscheid/Adressbuch_1935);
-Digitalisat in der [Digibib von genealogy.net](https://www.digibib.genealogy.net/viewer/image/871718278D_1935/1/-/).
+**Quelle:** Einwohner- und Geschäfts-Handbuch für Groß-Remscheid: Remscheid –
+Lennep – Lüttringhausen, Remscheid: Ziegler 1935
+([Digitalisat](https://www.digibib.genealogy.net/viewer/image/871718278D_1935/1/-/),
+[GenWiki](https://wiki.genealogy.net/Remscheid/Adressbuch_1935)).
+Daten: Verein für Computergenealogie e.V., *Historische Adressbücher aus dem
+Rheinland und Ruhrgebiet*, bereitgestellt für Coding da Vinci Nieder.Rhein.Land
+2021 ([Datensatzseite im Archiv](https://web.archive.org/web/20210906074729/https://codingdavinci.de/daten/historische-adressbuecher-aus-dem-rheinland-und-ruhrgebiet),
+[Download](https://download.codingdavinci.de/s/c8zc6Bn4dZMzyFS)),
+Lizenz [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de).
 
-**Lizenz:** Der Code steht unter der MIT-Lizenz, die eigene Aufbereitung
-(Koordinaten, Genauigkeit, Straßen- und Branchenzuordnung) unter CC BY 4.0.
-Ausgenommen ist die Quelldatei `data/remscheidABNRW1935.csv`; für sie gelten
-die Bedingungen von CompGen. Näheres in [`LICENSE`](LICENSE) und
-[`LICENSE-DATEN.md`](LICENSE-DATEN.md).
+**Lizenz:** Der Code steht unter der MIT-Lizenz. Die Daten, also die Quelldatei
+und alles, was dieses Projekt daraus erzeugt (Koordinaten, Genauigkeit,
+Straßen- und Branchenzuordnung, Kartendaten), stehen wie die Quelle unter
+CC BY-SA 4.0. Die Werkzeug-Piktogramme haben eigene Bildnachweise. Näheres in
+[`LICENSE`](LICENSE) und [`LICENSE-DATEN.md`](LICENSE-DATEN.md).
 
 **Kontakt:** Christos Rodouniklis, Bergische Universität Wuppertal.

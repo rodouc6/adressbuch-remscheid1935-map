@@ -33,7 +33,7 @@ Tests (ohne Nominatim und Sprachmodell): `python3 -m unittest discover tests`
 
 | Datei | Erzeugt von | Inhalt |
 |---|---|---|
-| `data/remscheidABNRW1935.csv` | (Quelle) | CompGen-Erfassung, **Tab-getrennt** trotz `.csv` |
+| `data/remscheidABNRW1935.csv` | (Quelle) | CompGen-Erfassung, unverändert aus der [Coding-da-Vinci-Freigabe](https://download.codingdavinci.de/s/c8zc6Bn4dZMzyFS) (Stand 06.08.2021); **Tab-getrennt** trotz `.csv`, Anführungszeichen gehören zum Text |
 | `data/strassen_mapping.csv` | von Hand | Regex historischer Straßenname → heutiger Name, mit Kommentar |
 | `output/remscheid1935_geovorbereitung.csv` | 01 | nur EinwVz + GewVz; `generation`, `adresse_norm`, `geoadresse` |
 | `output/unique_geoadressen.csv` | 02 | distinkte `geoadresse` mit Häufigkeit |
