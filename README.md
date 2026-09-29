@@ -1,9 +1,9 @@
-# Gewerbe in Remscheid 1935
+# Werkzeugindustrie und Gewerbe in Remscheid, 1935
 
 Eine interaktive Karte der Remscheider Gewerbe aus dem Adressbuch von 1935,
 und die Aufbereitung dahinter.
 
-**Zur Karte: <https://rodouc6.github.io/adressbuch-remscheid1935-map/>**
+**Zur Karte: <https://rodouc6.github.io/werkzeugindustrie-gewerbe-remscheid-1935/>**
 
 ![Die Karte von Remscheid mit farbigen Punkten für rund 9 000 Gewerbe-Einträge, oben die Filterleiste mit den Branchen-Kategorien](docs/bilder/karte-uebersicht.jpg)
 

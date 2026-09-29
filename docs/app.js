@@ -93,8 +93,8 @@ const map = new maplibregl.Map({
   // die vollstaendigen Nachweise mit allen Autoren stehen in LICENSE-DATEN.md
   attributionControl: {
     customAttribution:
-      'Daten: <a href="https://github.com/rodouc6/adressbuch-remscheid1935-map/blob/main/LICENSE-DATEN.md" target="_blank" rel="noopener">CompGen, CC BY-SA 4.0</a> · ' +
-      'Piktogramme: <a href="https://github.com/rodouc6/adressbuch-remscheid1935-map/blob/main/LICENSE-DATEN.md#bildnachweise-werkzeug-piktogramme" target="_blank" rel="noopener">Flaticon (Autoren)</a>',
+      'Daten: <a href="https://github.com/rodouc6/werkzeugindustrie-gewerbe-remscheid-1935/blob/main/LICENSE-DATEN.md" target="_blank" rel="noopener">CompGen, CC BY-SA 4.0</a> · ' +
+      'Piktogramme: <a href="https://github.com/rodouc6/werkzeugindustrie-gewerbe-remscheid-1935/blob/main/LICENSE-DATEN.md#bildnachweise-werkzeug-piktogramme" target="_blank" rel="noopener">Flaticon (Autoren)</a>',
   },
 });
 

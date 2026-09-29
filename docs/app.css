@@ -61,6 +61,8 @@ body {
   align-items: flex-start;
   padding: 10px 16px;
   gap: 0;
+  max-width: calc(100vw - 152px);   /* Platz fuer Filter- und Suchknopf rechts */
+  border-radius: 20px;              /* Titel kann umbrechen: keine volle Pillenform */
 }
 
 /* -------- Filter -------- */
@@ -160,7 +162,7 @@ body {
 /* -------- Category Chips -------- */
 .chips {
   position: absolute;
-  top: 76px;                  /* eigene Zeile unterhalb Titel + Suche */
+  top: 102px;                 /* eigene Zeile unterhalb Titel + Suche */
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -250,7 +252,7 @@ body[data-chips-hidden="true"] .chip {
 
 /* -------- Werkzeug Quick Toggle -------- */
 .pill--quick {
-  top: 130px;
+  top: 150px;
   left: 16px;
   width: 44px; height: 44px;
   padding: 0;
